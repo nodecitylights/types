@@ -9,11 +9,6 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "build": {
-      "name": "build",
-      "command": "npm run build",
-      "runAtStart": true
-    },
     "build:typedoc": {
       "name": "build:typedoc",
       "command": "npm run build:typedoc",
@@ -22,11 +17,6 @@
     "build:typedoc-watch": {
       "name": "build:typedoc-watch",
       "command": "npm run build:typedoc-watch",
-      "runAtStart": false
-    },
-    "build:all": {
-      "name": "build:all",
-      "command": "npm run build:all",
       "runAtStart": false
     },
     "clean": {
