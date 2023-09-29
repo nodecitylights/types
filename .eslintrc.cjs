@@ -1,5 +1,8 @@
 module.exports = {
-	'extends': [
+	extends: [
 		'neoncitylights/typescript',
 	],
+	rules: {
+		'@typescript-eslint/semi': 'off',
+	}
 };
