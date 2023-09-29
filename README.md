@@ -29,22 +29,22 @@ npm install @neoncitylights/types
 - [`Not<A>`](./src/logic.d.ts): A type representing the logical **NOT** gate of `A`, or logical negation.
 - [`And<A, B>`](./src/logic.d.ts): A type representing the logical **AND** gate of `A` and `B`, or logical conjunction.
 - [`Or<A, B>`](./src/logic.d.ts): A type representing the logical **OR** gate of `A` and `B`, or logical disjunction.
-- [`Nor<A, B>`](./src/logic.d.ts): A type representing the logical **NOR** gate of `A` and `B`, or logical non-disjunction. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables)
-- [`Nand<A, B>`](./src/logic.d.ts): A type representing the logical **NAND** gate of `A` and `B`. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables)
+- [`Nor<A, B>`](./src/logic.d.ts): A type representing the logical **NOR** gate of `A` and `B`, or logical non-disjunction. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables).
+- [`Nand<A, B>`](./src/logic.d.ts): A type representing the logical **NAND** gate of `A` and `B`. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables).
 - [`Xor<A, B>`](./src/logic.d.ts): A type representing the logical **XOR** gate of `A` and `B`, or exclusive disjunction/exclsuive OR.
 - [`Xnor<A, B>`](./src/logic.d.ts): A type representing the logical **XNOR** gate of `A` and `B`, or logical biconditional.
 
 ### Strings (`strings.d.ts`)
 
-- [`Affix`](./src/strings.d.ts): A simple string union type representing the possible affixes of a string: `'prefix'` or `'suffix'`. Intended for use with generic types such as `AffixedWith` or `RemoveAffix`
-- [`StartsWith<V, P>`](./src/strings.d.ts): A type representing whether a string `V` starts with a prefix `P`; evaluates to a `boolean`
-- [`EndsWith<V, S>`](./src/strings.d.ts): A type representing whether a string `V` ends with a suffix `S`; evaluates to a `boolean`
-- [`AffixedWith<V, A>`](./src/strings.d.ts): A type representing whether a string `V` is affixed with an affix kind of `A`; evaluates to a `boolean`
-- [`PrefixWith<V, Lit>`](./src/strings.d.ts): A type representing the result of prefixing a string `V` with a prefix `Lit`; evaluates to a string literal
-- [`SuffixWith<V, Lit>`](./src/strings.d.ts): A type representing the result of suffixing a string `V` with a suffix `S`; evaluates to a string literal
-- [`RemovePrefix<V, Lit>`](./src/strings.d.ts): A type representing the result of removing a prefix `Lit` from a string `V`; evaluates to a string literal
-- [`RemoveSuffix<V, Lit>`](./src/strings.d.ts): A type representing the result of removing a suffix `Lit` from a string `V`; evaluates to a string literal
-- [`RemoveAffix<V, Lit, A>`](./src/strings.d.ts): A type representing the result of removing an affix `Lit` from a string `V` with an affix kind of `A`; evaluates to a string literal
+- [`Affix`](./src/strings.d.ts): A simple string union type representing the possible affixes of a string: `'prefix'` or `'suffix'`. Intended for use with generic types such as `AffixedWith` or `RemoveAffix`.
+- [`StartsWith<V, P>`](./src/strings.d.ts): A type representing whether a string `V` starts with a prefix `P`; evaluates to a `boolean`.
+- [`EndsWith<V, S>`](./src/strings.d.ts): A type representing whether a string `V` ends with a suffix `S`; evaluates to a `boolean`.
+- [`AffixedWith<V, A>`](./src/strings.d.ts): A type representing whether a string `V` is affixed with an affix kind of `A`; evaluates to a `boolean`.
+- [`PrefixWith<V, Lit>`](./src/strings.d.ts): A type representing the result of prefixing a string `V` with a prefix `Lit`; evaluates to a string literal.
+- [`SuffixWith<V, Lit>`](./src/strings.d.ts): A type representing the result of suffixing a string `V` with a suffix `S`; evaluates to a string literal.
+- [`RemovePrefix<V, Lit>`](./src/strings.d.ts): A type representing the result of removing a prefix `Lit` from a string `V`; evaluates to a string literal.
+- [`RemoveSuffix<V, Lit>`](./src/strings.d.ts): A type representing the result of removing a suffix `Lit` from a string `V`; evaluates to a string literal.
+- [`RemoveAffix<V, Lit, A>`](./src/strings.d.ts): A type representing the result of removing an affix `Lit` from a string `V` with an affix kind of `A`; evaluates to a string literal.
 
 ## License
 
