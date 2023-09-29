@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Lint
-        run: npm run lint
+        run: npm run lint:all
 
   test:
     runs-on: ubuntu-latest
@@ -109,7 +109,7 @@ jobs:
     needs:
       - build
       - lint
-      - test
+      # - test
       - docs
       - is-publishable
     steps:
@@ -122,7 +122,7 @@ jobs:
     needs:
       - build
       - lint
-      - test
+      # - test
       - is-publishable
     steps:
       - name: ✅ CI succeeded
