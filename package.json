@@ -46,7 +46,7 @@
 		"lint:md": "markdownlint-cli2 '**/*.md' \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:es": "eslint src --ext .ts,.tsx",
-		"lint:es-fix": "npm run lint -- --fix",
+		"lint:es-fix": "npm run lint:es -- --fix",
 
 		"prepublishOnly": "npm run test:all",
 		"preversion": "npm run lint",
