@@ -8,6 +8,7 @@
  * | 0 |   1   |
  * | 1 |   0   |
  *
+ * @template A The boolean to negate
  * @example
  * ```ts
  * type Test1 = Not<true> // false
@@ -30,6 +31,8 @@ export type Not<A extends boolean> = A extends true
  * | 1 | 0 |    0    |
  * | 1 | 1 |    1    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test1 = And<true, true>   // true
@@ -57,6 +60,8 @@ export type And<A extends boolean, B extends boolean> =
  * | 1 | 0 |     1    |
  * | 1 | 1 |     0    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test1 = Nand<true, true>   // false
@@ -79,6 +84,8 @@ export type Nand<A extends boolean, B extends boolean> = Not<And<A, B>>
  * | 1 | 0 |    1    |
  * | 1 | 1 |    0    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test4 = Xor<false, false> // false
@@ -105,6 +112,8 @@ export type Xor<A extends boolean, B extends boolean> =
  * | 1 | 0 |     0    |
  * | 1 | 1 |     1    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test1 = Xnor<true, true>   // true
@@ -131,6 +140,8 @@ export type Xnor<A extends boolean, B extends boolean> =
  * | 1 | 0 |   1    |
  * | 1 | 1 |   1    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test4 = Or<false, false> // false
@@ -153,6 +164,8 @@ export type Or<A extends boolean, B extends boolean> = Nand<Not<A>, Not<B>>
  * | 1 | 0 |    0    |
  * | 1 | 1 |    0    |
  *
+ * @template A Boolean input A
+ * @template B Boolean input B
  * @example
  * ```ts
  * type Test4 = Nor<false, false> // true
