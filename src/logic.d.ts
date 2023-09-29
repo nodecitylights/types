@@ -88,10 +88,10 @@ export type Nand<A extends boolean, B extends boolean> = Not<And<A, B>>
  * @template B Boolean input B
  * @example
  * ```ts
- * type Test4 = Xor<false, false> // false
- * type Test3 = Xor<false, true>  // true
- * type Test2 = Xor<true, false>  // true
- * type Test1 = Xor<true, true>   // false
+ * type Test1 = Xor<false, false> // false
+ * type Test2 = Xor<false, true>  // true
+ * type Test3 = Xor<true, false>  // true
+ * type Test4 = Xor<true, true>   // false
  * ```
  */
 export type Xor<A extends boolean, B extends boolean> = 
@@ -144,10 +144,10 @@ export type Xnor<A extends boolean, B extends boolean> =
  * @template B Boolean input B
  * @example
  * ```ts
- * type Test4 = Or<false, false> // false
- * type Test3 = Or<false, true>  // true
- * type Test2 = Or<true, false>  // true
- * type Test1 = Or<true, true>   // true
+ * type Test1 = Or<false, false> // false
+ * type Test2 = Or<false, true>  // true
+ * type Test3 = Or<true, false>  // true
+ * type Test4 = Or<true, true>   // true
  * ```
  */
 export type Or<A extends boolean, B extends boolean> = Nand<Not<A>, Not<B>>
@@ -168,10 +168,10 @@ export type Or<A extends boolean, B extends boolean> = Nand<Not<A>, Not<B>>
  * @template B Boolean input B
  * @example
  * ```ts
- * type Test4 = Nor<false, false> // true
- * type Test3 = Nor<false, true>  // false
- * type Test2 = Nor<true, false>  // false
- * type Test1 = Nor<true, true>   // false
+ * type Test1 = Nor<false, false> // true
+ * type Test2 = Nor<false, true>  // false
+ * type Test3 = Nor<true, false>  // false
+ * type Test4 = Nor<true, true>   // false
  * ```
  */
 export type Nor<A extends boolean, B extends boolean> = Not<Or<A, B>>
