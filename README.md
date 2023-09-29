@@ -1,7 +1,6 @@
 # `@neoncitylights/types`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub deployments](https://img.shields.io/github/deployments/neoncitylights/types/github-pages?label=deploy)](https://github.com/neoncitylights/types/deployments/activity_log?environment=github-pages)
 [![Node.js workflow](https://github.com/neoncitylights/types/actions/workflows/main.yml/badge.svg)](https://github.com/neoncitylights/types/actions/workflows/main.yml)
 
 A small library of utility types for TypeScript.
