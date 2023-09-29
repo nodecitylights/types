@@ -1,4 +1,5 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.203.0/containers/typescript-node/.devcontainer/base.Dockerfile
+# See here for image contents:
+# https://github.com/devcontainers/images/tree/main/src/typescript-node
 
 # [Choice] Node.js version (use -bullseye variants on local arm64/Apple Silicon)
 # https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list

@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.203.0/containers/typescript-node
+// https://github.com/devcontainers/images/tree/main/src/typescript-node
 {
 	"name": "Node.js & TypeScript",
 	"runArgs": [
