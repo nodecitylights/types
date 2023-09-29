@@ -10,24 +10,16 @@
 	"keywords": [
 		"typescript"
 	],
-	"bugs": "https://github.com/neoncitylights/{libname}/issues",
+	"bugs": "https://github.com/neoncitylights/types/issues",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/neoncitylights/{libname}.git"
+		"url": "git+https://github.com/neoncitylights/types.git"
 	},
 	"funding": {
 		"type": "individual",
 		"url": "https://github.com/sponsors/neoncitylights"
 	},
-	"type": "module",
-	"main": "./dist/{libname}.umd.js",
-	"module": "./dist/{libname}.es.js",
-	"exports": {
-		".": {
-			"import": "./dist/{libname}.es.js",
-			"require": "./dist/{libname}.umd.js"
-		}
-	},
+	"main": "./src/index.d.ts",
 	"types": "./src/index.d.ts",
 	"files": [
 		"src/*.d.ts"
