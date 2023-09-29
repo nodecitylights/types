@@ -15,7 +15,7 @@ npm install @neoncitylights/types
 
 ### Functions (`fn.d.ts`)
 
-- [`FnArity1<T1, R>`](./src/fn.d.ts) - A type representing a function with an arity of 1, or a function that 1 argument (`T1`) and a return type of `R`.
+- [`FnArity1<T1, R>`](./src/fn.d.ts) - A type representing a function with an arity of 1, or a function that takes 1 argument (`T1`) and a return type of `R`.
 - [`FnArity2<T1, T2, R>`](./src/fn.d.ts) - A type representing a function with an arity of 2, or a function that takes 2 arguments (`T1`, `T2``) and a return type of `R`.
 - [`FnArity3<T1, T2, T3, R>`](./src/fn.d.ts) - A type representing a function with an arity of 3, or a function that takes 3 arguments (`T1`, `T2`, `T3`) and a return type of `R`.
 - [`FnArity4<T1, T2, T3, T4, R>`](./src/fn.d.ts) - A type representing a function with an arity of 4, or a function that takes 4 arguments (`T1`, `T2`, `T3`, `T4`) and a return type of `R`.
