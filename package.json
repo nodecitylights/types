@@ -5,19 +5,19 @@
 	"license": "MIT",
 	"author": {
 		"name": "Samantha",
-		"url": "https://github.com/{libauthor}"
+		"url": "https://github.com/neoncitylights"
 	},
 	"keywords": [
 		"typescript"
 	],
-	"bugs": "https://github.com/{libauthor}/{libname}/issues",
+	"bugs": "https://github.com/neoncitylights/{libname}/issues",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/{libauthor}/{libname}.git"
+		"url": "git+https://github.com/neoncitylights/{libname}.git"
 	},
 	"funding": {
 		"type": "individual",
-		"url": "https://github.com/sponsors/{libauthor}"
+		"url": "https://github.com/sponsors/neoncitylights"
 	},
 	"type": "module",
 	"main": "./dist/{libname}.umd.js",
@@ -28,18 +28,16 @@
 			"require": "./dist/{libname}.umd.js"
 		}
 	},
-	"types": "./dist/index.d.ts",
+	"types": "./src/index.d.ts",
 	"files": [
-		"dist"
+		"src/*.d.ts"
 	],
 	"directories": {
 		"test": "tests"
 	},
 	"scripts": {
-		"build": "vite build",
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
-		"build:all": "npm run build && npm run build:typedoc",
 		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
 		"reinstall": "npm run clean && npm install",
 		"deploy": "gh-pages -d ./docs/typedocs",
@@ -50,7 +48,6 @@
 		"test:all": "npm run test:ci && npm run lint",
 		"lint": "eslint src --ext .ts,.tsx",
 		"lint:fix": "npm run lint -- --fix",
-		"prepare": "npm run build",
 		"prepublishOnly": "npm run test:all",
 		"preversion": "npm run lint",
 		"version": "npm run lint && git add -A src",
@@ -62,11 +59,12 @@
 		"@vitest/coverage-v8": "^0.34.3",
 		"@vitest/ui": "^0.34.3",
 		"eslint": "8.48.0",
+		"eslint-config-neoncitylights": "^0.2.0",
 		"gh-pages": "6.0.0",
+		"markdownlint-cli2": "^0.10.0",
+		"markdownlint-config-neoncitylights": "^0.2.2",
 		"typedoc": "0.25.1",
 		"typescript": "5.2.2",
-		"vite": "^4.4.9",
-		"vite-plugin-dts": "^3.5.3",
 		"vitest": "^0.34.3"
 	}
 }
