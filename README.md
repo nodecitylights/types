@@ -31,7 +31,7 @@ npm install @neoncitylights/types
 - [`Or<A, B>`](./src/logic.d.ts): A type representing the logical **OR** gate of `A` and `B`, or logical disjunction.
 - [`Nor<A, B>`](./src/logic.d.ts): A type representing the logical **NOR** gate of `A` and `B`, or logical non-disjunction. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables).
 - [`Nand<A, B>`](./src/logic.d.ts): A type representing the logical **NAND** gate of `A` and `B`. A special type of gate that is *functionally complete* (capable of expressing all possible truth tables).
-- [`Xor<A, B>`](./src/logic.d.ts): A type representing the logical **XOR** gate of `A` and `B`, or exclusive disjunction/exclsuive OR.
+- [`Xor<A, B>`](./src/logic.d.ts): A type representing the logical **XOR** gate of `A` and `B`, or exclusive disjunction/exclusive OR.
 - [`Xnor<A, B>`](./src/logic.d.ts): A type representing the logical **XNOR** gate of `A` and `B`, or logical biconditional.
 
 ### Strings (`strings.d.ts`)
