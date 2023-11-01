@@ -15,12 +15,15 @@ updates:
       - "t-dependencies"
       - "pkg-npm"
     groups:
-      typescript-eslint:
+      typescript:
         patterns:
-          - "@typescript-eslint/*"
-          - "eslint"
           - "typescript"
           - "typedoc"
+      lint:
+        patterns:
+          - "eslint*"
+          - "markdownlint*"
+          - "publint"
       vite:
         patterns:
           - "vite"
