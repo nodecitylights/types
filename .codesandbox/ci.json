@@ -3,6 +3,7 @@
 	"node": "18",
 	"packages": [
 		"packages/types",
+		"packages/typed-css-utils",
 		"packages/typed-http"
 	]
 }
