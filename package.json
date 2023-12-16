@@ -6,14 +6,13 @@
 	"scripts": {
 		"lint": "npm run lint:es && npm run lint:md",
 		"lint:fix": "npm run lint:es-fix && npm run lint:md-fix",
-		"lint:es": "eslint --ext .js,.jsx,.ts,.tsx packages/react",
+		"lint:es": "eslint --ext .js,.jsx,.ts,.tsx packages/",
 		"lint:es-fix": "npm run lint:es -- --fix",
 		"lint:es-env": "eslint --env-info",
 		"lint:md": "markdownlint-cli2 '**/*.md' \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
-		"prelint:pub": "cd packages/react && npm run build",
-		"lint:pub": "publint packages/react",
+		"lint:pub": "publint packages/types",
 		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
