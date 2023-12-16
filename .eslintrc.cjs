@@ -7,5 +7,6 @@ module.exports = {
 	],
 	rules: {
 		'@typescript-eslint/semi': 'off',
+		'security/detect-non-literal-fs-filename': 'off',
 	},
 };
