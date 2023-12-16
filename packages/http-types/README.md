@@ -1,7 +1,7 @@
-# @neoncitylights/typed-http
+# @neoncitylights/http-types
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![npm (scoped)](https://img.shields.io/npm/v/@neoncitylights/typed-http?style=flat-square)](https://www.npmjs.com/package/@neoncitylights/typed-http)
+[![npm (scoped)](https://img.shields.io/npm/v/@neoncitylights/http-types?style=flat-square)](https://www.npmjs.com/package/@neoncitylights/http-types)
 
 A pure TypeScript package that provides strongly typed HTTP headers, methods, and status codes. Supports the Fetch API, `XmlHttpRequest`, and the Node.js HTTP module with zero-runtime overhead.
 
@@ -14,12 +14,12 @@ This package uses an open-source JSON dataset by [WebConcepts](https://webconcep
 ## Install
 
 ```
-npm install @neoncitylights/typed-http
+npm install @neoncitylights/http-types
 ```
 
 ## Documentation
 
-[Auto-generated API documentation is available.](https://neoncitylights.github.io/typed-http/)
+[Auto-generated API documentation is available.](https://neoncitylights.github.io/http-types/)
 
 ### API Reference
 >
@@ -43,7 +43,7 @@ npm install @neoncitylights/typed-http
 ### Type the Fetch API
 
 ```ts
-import '@neoncitylights/typed-http/fetch';
+import '@neoncitylights/http-types/fetch';
 
 let request = await fetch();
 ```
@@ -51,7 +51,7 @@ let request = await fetch();
 ### Type `XmlHttpRequest`
 
 ```ts
-import '@neoncitylights/typed-http/xhr';
+import '@neoncitylights/http-types/xhr';
 
 const xhr = new XMLHttpRequest();
 xhr.addEventListener('load', (e) => console.log(xhr.responseText));
@@ -62,7 +62,7 @@ xhr.send();
 ### Type the Node.js HTTP module
 
 ```ts
-import '@neoncitylights/typed-http/node';
+import '@neoncitylights/http-types/node';
 ```
 
 ## License
