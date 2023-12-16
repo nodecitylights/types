@@ -13,7 +13,7 @@ A monorepo of pure-TypeScript type packages.
 
 ## License
 
-This library is licensed under the MIT license ([`LICENSE-MIT`](../../LICENSE) or <http://opensource.org/licenses/MIT>).
+This library is licensed under the MIT license ([`LICENSE-MIT`](./LICENSE) or <http://opensource.org/licenses/MIT>).
 
 ### Contribution
 

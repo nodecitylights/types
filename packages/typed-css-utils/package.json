@@ -11,6 +11,7 @@
 		"css",
 		"typescript"
 	],
+	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/typed-css-utils",
 	"bugs": "https://github.com/neoncitylights/types/issues",
 	"repository": {
 		"type": "git",

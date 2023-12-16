@@ -1,7 +1,7 @@
-# Typed CSS utilities
+# neoncitylights/typed-css-utils
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![NPM package](https://img.shields.io/npm/v/@neoncitylights/typed-css-utils)](https://www.npmjs.com/package/@neoncitylights/typed-css-utils)
+[![NPM package](https://img.shields.io/npm/v/@neoncitylights/typed-css-utils?style=flat-square)](https://www.npmjs.com/package/@neoncitylights/typed-css-utils)
 
 This library provides a set of utilities extending the `csstype` package to help you write typed CSS in TypeScript.
 
@@ -54,3 +54,7 @@ const supportsFlex: boolean = cssSupports('display', 'flex');
 ## License
 
 This library is licensed under the [MIT License](./LICENSE).
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the MIT license, shall be licensed as above, without any additional terms or conditions.

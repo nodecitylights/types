@@ -16,6 +16,7 @@
 		"xmlHttpRequest",
 		"node"
 	],
+	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/typed-http",
 	"bugs": "https://github.com/neoncitylights/types/issues",
 	"repository": {
 		"type": "git",
@@ -34,9 +35,6 @@
 		"src/httpStatusCodes.ts",
 		"src/*.d.ts"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"generateHttpTypes": "ts-node ./build/generateHttpTypes.ts",
 		"build": "npm run generateHttpTypes",
