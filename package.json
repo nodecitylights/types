@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"workspaces": [
+		"packages/**"
+	],
+	"scripts": {
+		"lint": "npm run lint:es && npm run lint:md",
+		"lint:fix": "npm run lint:es-fix && npm run lint:md-fix",
+		"lint:es": "eslint --ext .js,.jsx,.ts,.tsx packages/react",
+		"lint:es-fix": "npm run lint:es -- --fix",
+		"lint:es-env": "eslint --env-info",
+		"lint:md": "markdownlint-cli2 '**/*.md' \"#node_modules\"",
+		"lint:md-fix": "npm run lint:md -- --fix",
+		"lint:md-env": "markdownlint-cli2 --version",
+		"prelint:pub": "cd packages/react && npm run build",
+		"lint:pub": "publint packages/react",
+		"lint:pub-env": "publint --version"
+	},
+	"devDependencies": {
+		"@vitest/coverage-v8": "^1.0.4",
+		"@vitest/ui": "^1.0.4",
+		"eslint": "8.55.0",
+		"eslint-config-neoncitylights": "^0.3.0",
+		"gh-pages": "6.1.0",
+		"markdownlint-cli2": "^0.11.0",
+		"markdownlint-config-neoncitylights": "^0.3.0",
+		"publint": "^0.2.6",
+		"typescript": "5.3.3",
+		"vite": "^5.0.7",
+		"vite-plugin-dts": "^3.6.4",
+		"vitest": "^1.0.4"
+	}
+}
