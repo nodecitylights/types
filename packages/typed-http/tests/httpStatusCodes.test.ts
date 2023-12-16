@@ -1,15 +1,16 @@
 import { expectTypeOf, test } from 'vitest';
+
 import {
 	HttpClientErrorStatusCode,
 	HttpInfoStatusCode,
 	HttpRedirectStatusCode,
 	HttpServerErrorStatusCode,
 	HttpStatusCode,
-	HttpSuccessStatusCode
+	HttpSuccessStatusCode,
 } from '../src/httpStatusCodes';
 
 const infoStatusCodes: HttpInfoStatusCode[] = [
-	100, 101, 102, 103
+	100, 101, 102, 103,
 ];
 
 const successStatusCodes: HttpSuccessStatusCode[] = [

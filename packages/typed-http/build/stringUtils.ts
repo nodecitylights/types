@@ -15,6 +15,7 @@ export function getDocumentationLabel(link: URL) {
 		// example URLs:
 		// - https://datatracker.ietf.org/doc/html/rfc7694#section-3
 		// - https://datatracker.ietf.org/doc/html/rfc7089#section-2.1.1
+		// eslint-disable-next-line security/detect-unsafe-regex
 		const regex = /(draft-(\w|-)+|rfc(\d{4,}))#section-(\d+)((.\d*)*)/;
 		const ietfPath = path.substring('/doc/html/'.length) + link.hash;
 		const matches = regex.exec(ietfPath);

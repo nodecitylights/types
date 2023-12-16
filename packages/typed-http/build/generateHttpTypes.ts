@@ -1,4 +1,6 @@
 import fs from 'fs';
+import wordWrap from 'word-wrap';
+
 import {
 	capitalize,
 	Concept,
@@ -15,7 +17,6 @@ import {
 	makeUnionType,
 	READ_FILE_PATH,
 } from '.';
-import wordWrap from 'word-wrap';
 
 function createRunGenerator(
 	writeFilePath: string,

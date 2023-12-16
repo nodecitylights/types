@@ -1,4 +1,5 @@
 import { expectTypeOf, test } from 'vitest';
+
 import { HttpMethod } from '../src/httpMethods';
 
 const httpMethods: HttpMethod[] = [
