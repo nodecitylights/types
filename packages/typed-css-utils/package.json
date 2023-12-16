@@ -1,0 +1,54 @@
+{
+	"name": "@neoncitylights/typed-css-utils",
+	"version": "0.2.0",
+	"description": "Improved TypeScript support for CSS and relevant APIs",
+	"license": "MIT",
+	"author": {
+		"name": "Samantha",
+		"url": "https://github.com/neoncitylights"
+	},
+	"keywords": [
+		"css",
+		"typescript"
+	],
+	"bugs": "https://github.com/neoncitylights/types/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/samantha-labs/types.git"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/neoncitylights"
+	},
+	"type": "module",
+	"module": "./dist/typed-css-utils.es.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"*": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/typed-css-utils.es.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "vite build",
+		"build:typedoc": "npx typedoc",
+		"build:all": "npm run build && npm run build:typedoc",
+		"clean": "rm -rf ./dist/ ./docs/typedocs/",
+		"deploy": "gh-pages -d ./docs/typedocs",
+		"test": "jest --coverage",
+		"lint": "eslint src --ext .ts,.tsx",
+		"lint:fix": "eslint --fix src --ext .ts,.tsx",
+		"test:all": "npm run test && npm run lint",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm run lint",
+		"preversion": "npm run lint",
+		"version": "npm run lint && git add -A src",
+		"postversion": "git push && git push --tags"
+	},
+	"dependencies": {
+		"csstype": "^3.1.1"
+	}
+}
