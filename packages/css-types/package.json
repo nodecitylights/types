@@ -1,5 +1,5 @@
 {
-	"name": "@neoncitylights/typed-css-utils",
+	"name": "@neoncitylights/css-types",
 	"version": "0.2.0",
 	"description": "Improved TypeScript support for CSS and relevant APIs",
 	"license": "MIT",
@@ -11,7 +11,7 @@
 		"css",
 		"typescript"
 	],
-	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/typed-css-utils",
+	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/css-types",
 	"bugs": "https://github.com/neoncitylights/types/issues",
 	"repository": {
 		"type": "git",
@@ -22,12 +22,12 @@
 		"url": "https://github.com/sponsors/neoncitylights"
 	},
 	"type": "module",
-	"module": "./dist/typed-css-utils.es.js",
+	"module": "./dist/css-types.es.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
 		"*": {
 			"types": "./dist/index.d.ts",
-			"import": "./dist/typed-css-utils.es.js"
+			"import": "./dist/css-types.es.js"
 		}
 	},
 	"files": [
