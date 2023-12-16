@@ -1,4 +1,7 @@
 {
 	"buildCommand": false,
-	"node": "18"
+	"node": "18",
+	"packages": [
+		"packages/types"
+	]
 }
