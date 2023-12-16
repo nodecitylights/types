@@ -1,0 +1,56 @@
+{
+	"name": "@neoncitylights/types",
+	"version": "0.0.0",
+	"description": "A library of utility types for TypeScript",
+	"license": "MIT",
+	"author": {
+		"name": "Samantha",
+		"url": "https://github.com/neoncitylights"
+	},
+	"keywords": [
+		"typescript"
+	],
+	"bugs": "https://github.com/neoncitylights/types/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/neoncitylights/types.git"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/neoncitylights"
+	},
+	"main": "./src/index.d.ts",
+	"types": "./src/index.d.ts",
+	"files": [
+		"src/*.d.ts"
+	],
+	"directories": {
+		"test": "tests"
+	},
+	"scripts": {
+		"build:typedoc": "npx typedoc",
+		"build:typedoc-watch": "npm run build:typedoc -- --watch",
+
+		"clean": "rm -rf ./dist/ ./docs/typedocs/ ./node_modules && rm -rf ./package-lock.json",
+		"reinstall": "npm run clean && npm install",
+		"deploy": "gh-pages -d ./docs/typedocs",
+
+		"test": "vitest --coverage --passWithNoTests",
+		"test:ci": "npm run test -- run",
+		"test:ui": "npm run test -- --ui",
+		"test:watch": "npm run test -- --watch",
+		"test:all": "npm run test:ci && npm run lint",
+
+		"lint": "npm run lint:es && npm run lint:md",
+		"lint:fix": "npm run lint:es-fix && npm run lint:md-fix",
+		"lint:md": "markdownlint-cli2 '**/*.md' \"#node_modules\"",
+		"lint:md-fix": "npm run lint:md -- --fix",
+		"lint:es": "eslint src --ext .ts,.tsx",
+		"lint:es-fix": "npm run lint:es -- --fix",
+
+		"prepublishOnly": "npm run test:all",
+		"preversion": "npm run lint",
+		"version": "npm run lint && git add -A src",
+		"postversion": "git push && git push --tags"
+	}
+}
