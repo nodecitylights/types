@@ -1,5 +1,5 @@
 {
-	"name": "@neoncitylights/typed-http",
+	"name": "@neoncitylights/http-types",
 	"version": "0.2.0",
 	"description": "Provides strongly typed HTTP headers, methods, and status codes. Supports the Fetch API, XmlHttpRequest, and the Node.js HTTP module with zero-runtime overhead.",
 	"license": "MIT",
@@ -16,7 +16,7 @@
 		"xmlHttpRequest",
 		"node"
 	],
-	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/typed-http",
+	"homepage": "https://github.com/neoncitylights/types/tree/main/packages/http-types",
 	"bugs": "https://github.com/neoncitylights/types/issues",
 	"repository": {
 		"type": "git",
