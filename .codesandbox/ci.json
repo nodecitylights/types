@@ -2,6 +2,7 @@
 	"buildCommand": false,
 	"node": "18",
 	"packages": [
-		"packages/types"
+		"packages/types",
+		"packages/typed-css-utils"
 	]
 }
