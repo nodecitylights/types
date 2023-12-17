@@ -2710,6 +2710,27 @@ export type HttpHeaderUpgrade = 'Upgrade';
 export type HttpHeaderUpgradeInsecureRequests = 'Upgrade-Insecure-Requests';
 
 /**
+ * The "Upload-Complete" request and response header field
+ * indicates whether the corresponding upload is considered
+ * complete. The Upload-Complete field value is a Boolean.
+ *
+ * @see [Documentationundefined](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-complete)
+ * @see [Specification → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/)
+ */
+export type HttpHeaderUploadComplete = 'Upload-Complete';
+
+/**
+ * The "Upload-Offset" request and response header field
+ * indicates the resumption offset of corresponding upload,
+ * counted in bytes. The Upload-Offset field value is an
+ * Integer.
+ *
+ * @see [Documentationundefined](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-offset)
+ * @see [Specification → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/)
+ */
+export type HttpHeaderUploadOffset = 'Upload-Offset';
+
+/**
  * An application server MAY include an Urgency header field in
  * its request for push message delivery. This header field
  * indicates the message urgency. The push service MUST NOT
@@ -3132,6 +3153,8 @@ export type HttpHeader =
 	| HttpHeaderURI
 	| HttpHeaderUpgrade
 	| HttpHeaderUpgradeInsecureRequests
+	| HttpHeaderUploadComplete
+	| HttpHeaderUploadOffset
 	| HttpHeaderUrgency
 	| HttpHeaderUserAgent
 	| HttpHeaderVariantKey

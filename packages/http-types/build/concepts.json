@@ -3704,6 +3704,32 @@
 				]
 			},
 			{
+				"value":"Upload-Complete",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Upload-Complete",
+				"details":[
+					{
+						"description":"The \"Upload-Complete\" request and response header field indicates whether the corresponding upload is considered complete. The Upload-Complete field value is a Boolean.",
+						"documentation":"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-complete",
+						"specification":"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/",
+						"spec-name":"Internet Draft ietf-httpbis-resumable-upload"
+					}
+				]
+			},
+			{
+				"value":"Upload-Offset",
+				"concept":"http://webconcepts.info/concepts/http-header/",
+				"id":"http://webconcepts.info/concepts/http-header/Upload-Offset",
+				"details":[
+					{
+						"description":"The \"Upload-Offset\" request and response header field indicates the resumption offset of corresponding upload, counted in bytes. The Upload-Offset field value is an Integer.",
+						"documentation":"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-offset",
+						"specification":"https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/",
+						"spec-name":"Internet Draft ietf-httpbis-resumable-upload"
+					}
+				]
+			},
+			{
 				"value":"Urgency",
 				"concept":"http://webconcepts.info/concepts/http-header/",
 				"id":"http://webconcepts.info/concepts/http-header/Urgency",
