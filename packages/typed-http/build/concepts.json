@@ -1373,6 +1373,19 @@
 				]
 			},
 			{
+				"value":"Content-MD5",
+				"concept":"http://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Content-MD5",
+				"details":[
+					{
+						"description": "The \"Content-MD5\" header field references an MD5 hash of the content to verify the integrity of the message body that's been transmitted.",
+						"documentation":"https://datatracker.ietf.org/doc/html/rfc1864#section-1",
+						"specification":"https://webconcepts.info/specs/IETF/RFC/1864",
+						"spec-name":"RFC 1864"
+					}
+				]
+			},
+			{
 				"value":"Content-Range",
 				"concept":"http://webconcepts.info/concepts/http-header/",
 				"id":"http://webconcepts.info/concepts/http-header/Content-Range",

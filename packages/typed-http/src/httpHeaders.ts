@@ -686,6 +686,16 @@ export type HttpHeaderContentLength = 'Content-Length';
 export type HttpHeaderContentLocation = 'Content-Location';
 
 /**
+ * The "Content-MD5" header field references an MD5 hash of the
+ * content to verify the integrity of the message body that's
+ * been transmitted.
+ *
+ * @see [Documentation → IETF RFC 1864 §1](https://datatracker.ietf.org/doc/html/rfc1864#section-1)
+ * @see [Specification → RFC 1864](https://webconcepts.info/specs/IETF/RFC/1864)
+ */
+export type HttpHeaderContentMD5 = 'Content-MD5';
+
+/**
  * The Content-Range entity-header is sent with a partial
  * entity-body to specify where in the full entity-body the
  * partial body should be applied.
@@ -2945,6 +2955,7 @@ export type HttpHeader =
 	| HttpHeaderContentLanguage
 	| HttpHeaderContentLength
 	| HttpHeaderContentLocation
+	| HttpHeaderContentMD5
 	| HttpHeaderContentRange
 	| HttpHeaderContentSecurityPolicy
 	| HttpHeaderContentSecurityPolicyPin
