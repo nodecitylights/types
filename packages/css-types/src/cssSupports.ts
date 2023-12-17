@@ -10,7 +10,7 @@ export type CSSPropertyValue<K extends CSSProperty> = Required<PropertiesHyphen[
  *
  * @example
  * ```ts
- * import { cssSupports } from '@neoncitylights/typed-css-utils';
+ * import { cssSupports } from '@neoncitylights/css-types';
  *
  * const supportsGrid = cssSupports('display', 'grid');
  * const supportsFlex = cssSupports('display', 'flex');

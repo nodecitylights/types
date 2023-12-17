@@ -4,7 +4,7 @@
  * 
  * @example
  * ```ts
- * import { matchMediaFeature } from '@neoncitylights/typed-css-utils';
+ * import { matchMediaFeature } from '@neoncitylights/css-types';
  * 
  * const userPrefersDark: MediaQueryList = matchMediaFeature('prefers-color-scheme', 'dark');
  * const prefersLessMotion: MediaQueryList = matchMediaFeature('prefers-reduced-motion', 'reduce');
