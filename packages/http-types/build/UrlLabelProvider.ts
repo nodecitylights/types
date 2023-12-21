@@ -79,20 +79,17 @@ export class IetfDataTrackerLabelProvider implements UrlLabelProviderForHost {
 		const path = link.pathname;
 		const hash = link.hash;
 
+		let label = detail['spec-name'];
+
 		// eslint-disable-next-line security/detect-unsafe-regex
 		const regex = /(draft-(\w|-)+|rfc(\d{4,}))#section-(\d+)((.\d*)*)/;
 		const ietfPath = path.substring('/doc/html/'.length) + hash;
 		const matches = regex.exec(ietfPath);
 
-		if( matches === null ) {
-			return '';
+		if( matches !== null ) {
+			label += ` §${matches[4] + matches[5]}`; // section
 		}
 
-		const isDraft: boolean = matches[1].startsWith('draft');
-		const specType: string = isDraft ? 'Internet Draft' : 'RFC';
-		const specName: string = isDraft ? matches[1].substring('draft-'.length) : matches[3];
-		const section: string = matches[4] + matches[5];
-
-		return `${specType} ${specName} §${section}`;
+		return label;
 	}
 }
