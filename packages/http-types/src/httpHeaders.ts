@@ -164,7 +164,7 @@ export type HttpHeaderAcceptPatch = 'Accept-Patch';
  * resource identified by the Request-URI.
  *
  * @see [Documentation → Linked Data Platform 1.0](http://www.w3.org/TR/ldp/#header-accept-post)
- * @see [Specification → W3C TR http://www.w3.org/TR/ldp](http://webconcepts.info/specs/W3C/TR/ldp)
+ * @see [Specification → Linked Data Platform 1.0](http://webconcepts.info/specs/W3C/TR/ldp)
  */
 export type HttpHeaderAcceptPost = 'Accept-Post';
 
@@ -461,7 +461,7 @@ export type HttpHeaderCOpt = 'C-Opt';
  * communicated by proxies over further connections.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743948)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-http-pep](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderCPEP = 'C-PEP';
 
@@ -472,7 +472,7 @@ export type HttpHeaderCPEP = 'C-PEP';
  * proxies over further connections.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743954)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-http-pep](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderCPEPInfo = 'C-PEP-Info';
 
@@ -542,7 +542,7 @@ export type HttpHeaderCalManagedID = 'Cal-Managed-ID';
  * a certain set of types.
  *
  * @see [Documentation → Clear Site Data](http://www.w3.org/TR/clear-site-data/#header)
- * @see [Specification → W3C TR http://www.w3.org/TR/clear-site-data](http://webconcepts.info/specs/W3C/TR/clear-site-data)
+ * @see [Specification → Clear Site Data](http://webconcepts.info/specs/W3C/TR/clear-site-data)
  */
 export type HttpHeaderClearSiteData = 'Clear-Site-Data';
 
@@ -714,8 +714,8 @@ export type HttpHeaderContentRange = 'Content-Range';
  *
  * @see [Documentation → Content Security Policy Level 3](http://www.w3.org/TR/CSP3/#csp-header)
  * @see [Documentation → Content Security Policy Level 2](http://www.w3.org/TR/CSP2/#content-security-policy-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/CSP3](http://webconcepts.info/specs/W3C/TR/CSP3)
- * @see [Specification → W3C TR http://www.w3.org/TR/CSP2](http://webconcepts.info/specs/W3C/TR/CSP2)
+ * @see [Specification → Content Security Policy Level 3](http://webconcepts.info/specs/W3C/TR/CSP3)
+ * @see [Specification → Content Security Policy Level 2](http://webconcepts.info/specs/W3C/TR/CSP2)
  */
 export type HttpHeaderContentSecurityPolicy = 'Content-Security-Policy';
 
@@ -727,7 +727,7 @@ export type HttpHeaderContentSecurityPolicy = 'Content-Security-Policy';
  * policy to response" algorithm).
  *
  * @see [Documentation → Content Security Policy Pinning](http://www.w3.org/TR/csp-pinning/#content-security-policy-pin-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/csp-pinning](http://webconcepts.info/specs/W3C/TR/csp-pinning)
+ * @see [Specification → Content Security Policy Pinning](http://webconcepts.info/specs/W3C/TR/csp-pinning)
  */
 export type HttpHeaderContentSecurityPolicyPin = 'Content-Security-Policy-Pin';
 
@@ -738,8 +738,8 @@ export type HttpHeaderContentSecurityPolicyPin = 'Content-Security-Policy-Pin';
  *
  * @see [Documentation → Content Security Policy Level 3](http://www.w3.org/TR/CSP3/#cspro-header)
  * @see [Documentation → Content Security Policy Level 2](http://www.w3.org/TR/CSP2/#content-security-policy-report-only-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/CSP3](http://webconcepts.info/specs/W3C/TR/CSP3)
- * @see [Specification → W3C TR http://www.w3.org/TR/CSP2](http://webconcepts.info/specs/W3C/TR/CSP2)
+ * @see [Specification → Content Security Policy Level 3](http://webconcepts.info/specs/W3C/TR/CSP3)
+ * @see [Specification → Content Security Policy Level 2](http://webconcepts.info/specs/W3C/TR/CSP2)
  */
 export type HttpHeaderContentSecurityPolicyReportOnly = 'Content-Security-Policy-Report-Only';
 
@@ -751,7 +751,7 @@ export type HttpHeaderContentSecurityPolicyReportOnly = 'Content-Security-Policy
  * described in the "Pin a policy to response" algorithm).
  *
  * @see [Documentation → Content Security Policy Pinning](http://www.w3.org/TR/csp-pinning/#content-security-policy-report-only-pin-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/csp-pinning](http://webconcepts.info/specs/W3C/TR/csp-pinning)
+ * @see [Specification → Content Security Policy Pinning](http://webconcepts.info/specs/W3C/TR/csp-pinning)
  */
 export type HttpHeaderContentSecurityPolicyReportOnlyPin = 'Content-Security-Policy-Report-Only-Pin';
 
@@ -901,7 +901,7 @@ export type HttpHeaderDAV = 'DAV';
  * a user's tracking preference via HTTP.
  *
  * @see [Documentation → Tracking Preference Expression (DNT)](http://www.w3.org/TR/tracking-dnt/#dnt-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/tracking-dnt](http://webconcepts.info/specs/W3C/TR/tracking-dnt)
+ * @see [Specification → Tracking Preference Expression (DNT)](http://webconcepts.info/specs/W3C/TR/tracking-dnt)
  */
 export type HttpHeaderDNT = 'DNT';
 
@@ -972,7 +972,7 @@ export type HttpHeaderDestination = 'Destination';
  * GiB.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/device-memory-1/#sec-device-memory-client-hint-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/device-memory-1](http://webconcepts.info/specs/W3C/TR/device-memory-1)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/device-memory-1)
  */
 export type HttpHeaderDeviceMemory = 'Device-Memory';
 
@@ -1010,7 +1010,7 @@ export type HttpHeaderEDIINTFeatures = 'EDIINT-Features';
  * field along with a response.
  *
  * @see [Documentation → Entry Point Regulation](http://www.w3.org/TR/epr/#epr-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/epr](http://webconcepts.info/specs/W3C/TR/epr)
+ * @see [Specification → Entry Point Regulation](http://webconcepts.info/specs/W3C/TR/epr)
  */
 export type HttpHeaderEPR = 'EPR';
 
@@ -1097,7 +1097,7 @@ export type HttpHeaderExt = 'Ext';
  * policy that should be enforced by the client.
  *
  * @see [Documentation → Permissions Policy](http://www.w3.org/TR/feature-policy-1/#feature-policy-http-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/feature-policy-1](http://webconcepts.info/specs/W3C/TR/feature-policy-1)
+ * @see [Specification → Permissions Policy](http://webconcepts.info/specs/W3C/TR/feature-policy-1)
  */
 export type HttpHeaderFeaturePolicy = 'Feature-Policy';
 
@@ -1331,7 +1331,7 @@ export type HttpHeaderLabel = 'Label';
  * event source's last event ID string, encoded as UTF-8.
  *
  * @see [Documentation → Server-Sent Events](http://www.w3.org/TR/eventsource/#last-event-id)
- * @see [Specification → W3C TR http://www.w3.org/TR/eventsource](http://webconcepts.info/specs/W3C/TR/eventsource)
+ * @see [Specification → Server-Sent Events](http://webconcepts.info/specs/W3C/TR/eventsource)
  */
 export type HttpHeaderLastEventID = 'Last-Event-ID';
 
@@ -1442,7 +1442,7 @@ export type HttpHeaderMementoDatetime = 'Memento-Datetime';
  * array defines an NEL policy for the origin.
  *
  * @see [Documentation → Network Error Logging](http://www.w3.org/TR/network-error-logging-1/#nel-response-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/network-error-logging-1](http://webconcepts.info/specs/W3C/TR/network-error-logging-1)
+ * @see [Specification → Network Error Logging](http://webconcepts.info/specs/W3C/TR/network-error-logging-1)
  */
 export type HttpHeaderNEL = 'NEL';
 
@@ -1585,7 +1585,7 @@ export type HttpHeaderOverwrite = 'Overwrite';
  * gives one or more comma-separated directives.
  *
  * @see [Documentation → The Platform for Privacy Preferences 1.0 (P3P1.0) Specification](http://www.w3.org/TR/P3P/#syntax_ext)
- * @see [Specification → W3C TR http://www.w3.org/TR/P3P](http://webconcepts.info/specs/W3C/TR/P3P)
+ * @see [Specification → The Platform for Privacy Preferences 1.0 (P3P1.0) Specification](http://webconcepts.info/specs/W3C/TR/P3P)
  */
 export type HttpHeaderP3P = 'P3P';
 
@@ -1595,7 +1595,7 @@ export type HttpHeaderP3P = 'P3P';
  * is an end-to-end header field.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743947)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-http-pep](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderPEP = 'PEP';
 
@@ -1604,7 +1604,7 @@ export type HttpHeaderPEP = 'PEP';
  * recipient of a message.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743953)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-http-pep](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderPEPInfo = 'PEP-Info';
 
@@ -1613,7 +1613,7 @@ export type HttpHeaderPEPInfo = 'PEP-Info';
  * control which features and APIs can be used in the browser.
  *
  * @see [Documentation → Permissions Policy](https://www.w3.org/TR/permissions-policy-1/#permissions-policy-http-header-field)
- * @see [Specification → W3C TR https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
+ * @see [Specification → Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
  */
 export type HttpHeaderPermissionsPolicy = 'Permissions-Policy';
 
@@ -1763,7 +1763,7 @@ export type HttpHeaderProxyAuthorization = 'Proxy-Authorization';
  * specified proxy.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-proxy)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-proxy](http://webconcepts.info/specs/W3C/TR/WD-proxy)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-proxy)
  */
 export type HttpHeaderProxyFeatures = 'Proxy-Features';
 
@@ -1774,7 +1774,7 @@ export type HttpHeaderProxyFeatures = 'Proxy-Features';
  * request.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/WD-proxy)
- * @see [Specification → W3C TR http://www.w3.org/TR/WD-proxy](http://webconcepts.info/specs/W3C/TR/WD-proxy)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-proxy)
  */
 export type HttpHeaderProxyInstruction = 'Proxy-Instruction';
 
@@ -1905,7 +1905,7 @@ export type HttpHeaderReferer = 'Referer';
  * with requests made.
  *
  * @see [Documentation → undefined](https://www.w3.org/TR/referrer-policy/#referrer-policy-header-dfn)
- * @see [Specification → W3C TR https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
+ * @see [Specification → undefined](https://www.w3.org/TR/referrer-policy/)
  */
 export type HttpHeaderReferrerPolicy = 'Referrer-Policy';
 
@@ -1960,7 +1960,7 @@ export type HttpHeaderRepeatabilityResult = 'Repeatability-Result';
  * agent to store reporting endpoints for an origin.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/reporting-1/#header)
- * @see [Specification → W3C TR http://www.w3.org/TR/reporting-1](http://webconcepts.info/specs/W3C/TR/reporting-1)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/reporting-1)
  */
 export type HttpHeaderReportTo = 'Report-To';
 
@@ -2022,7 +2022,7 @@ export type HttpHeaderSaveData = 'Save-Data';
  * issuing a SOAP HTTP Request.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383528)
- * @see [Specification → W3C TR http://www.w3.org/TR/SOAP](http://webconcepts.info/specs/W3C/TR/SOAP)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/SOAP)
  */
 export type HttpHeaderSOAPAction = 'SOAPAction';
 
@@ -2216,7 +2216,7 @@ export type HttpHeaderSecCHUAWoW64 = 'Sec-CH-UA-WoW64';
  * and user agents, respectively.
  *
  * @see [Documentation → Confinement with Origin Web Labels](http://www.w3.org/TR/COWL/#header)
- * @see [Specification → W3C TR http://www.w3.org/TR/COWL](http://webconcepts.info/specs/W3C/TR/COWL)
+ * @see [Specification → Confinement with Origin Web Labels](http://webconcepts.info/specs/W3C/TR/COWL)
  */
 export type HttpHeaderSecCOWL = 'Sec-COWL';
 
@@ -2225,7 +2225,7 @@ export type HttpHeaderSecCOWL = 'Sec-COWL';
  * destination to a server.
  *
  * @see [Documentation → Fetch Metadata Request Headers](http://www.w3.org/TR/fetch-metadata/#sec-fetch-dest-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/fetch-metadata](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
+ * @see [Specification → Fetch Metadata Request Headers](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
  */
 export type HttpHeaderSecFetchDest = 'Sec-Fetch-Dest';
 
@@ -2234,7 +2234,7 @@ export type HttpHeaderSecFetchDest = 'Sec-Fetch-Dest';
  * mode to a server.
  *
  * @see [Documentation → Fetch Metadata Request Headers](http://www.w3.org/TR/fetch-metadata/#sec-fetch-mode-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/fetch-metadata](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
+ * @see [Specification → Fetch Metadata Request Headers](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
  */
 export type HttpHeaderSecFetchMode = 'Sec-Fetch-Mode';
 
@@ -2244,7 +2244,7 @@ export type HttpHeaderSecFetchMode = 'Sec-Fetch-Mode';
  * target’s origin.
  *
  * @see [Documentation → Fetch Metadata Request Headers](http://www.w3.org/TR/fetch-metadata/#sec-fetch-site-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/fetch-metadata](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
+ * @see [Specification → Fetch Metadata Request Headers](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
  */
 export type HttpHeaderSecFetchSite = 'Sec-Fetch-Site';
 
@@ -2253,7 +2253,7 @@ export type HttpHeaderSecFetchSite = 'Sec-Fetch-Site';
  * not a navigation request was triggered by user activation.
  *
  * @see [Documentation → Fetch Metadata Request Headers](http://www.w3.org/TR/fetch-metadata/#sec-fetch-user-header)
- * @see [Specification → W3C TR http://www.w3.org/TR/fetch-metadata](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
+ * @see [Specification → Fetch Metadata Request Headers](http://webconcepts.info/specs/W3C/TR/fetch-metadata)
  */
 export type HttpHeaderSecFetchUser = 'Sec-Fetch-User';
 
@@ -2367,7 +2367,7 @@ export type HttpHeaderServer = 'Server';
  * cycle.
  *
  * @see [Documentation → Server Timing](http://www.w3.org/TR/server-timing/#the-server-timing-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/server-timing](http://webconcepts.info/specs/W3C/TR/server-timing)
+ * @see [Specification → Server Timing](http://webconcepts.info/specs/W3C/TR/server-timing)
  */
 export type HttpHeaderServerTiming = 'Server-Timing';
 
@@ -2377,7 +2377,7 @@ export type HttpHeaderServerTiming = 'Server-Timing';
  * this request is a service worker's script resource request.
  *
  * @see [Documentation → Service Workers](http://www.w3.org/TR/service-workers-1/#service-worker-script-request)
- * @see [Specification → W3C TR http://www.w3.org/TR/service-workers-1](http://webconcepts.info/specs/W3C/TR/service-workers-1)
+ * @see [Specification → Service Workers](http://webconcepts.info/specs/W3C/TR/service-workers-1)
  */
 export type HttpHeaderServiceWorker = 'Service-Worker';
 
@@ -2389,7 +2389,7 @@ export type HttpHeaderServiceWorker = 'Service-Worker';
  * the script can control, to the given value.
  *
  * @see [Documentation → Service Workers](http://www.w3.org/TR/service-workers-1/#service-worker-script-response)
- * @see [Specification → W3C TR http://www.w3.org/TR/service-workers-1](http://webconcepts.info/specs/W3C/TR/service-workers-1)
+ * @see [Specification → Service Workers](http://webconcepts.info/specs/W3C/TR/service-workers-1)
  */
 export type HttpHeaderServiceWorkerAllowed = 'Service-Worker-Allowed';
 
@@ -2400,7 +2400,7 @@ export type HttpHeaderServiceWorkerAllowed = 'Service-Worker-Allowed';
  * request.
  *
  * @see [Documentation → Service Workers](http://www.w3.org/TR/service-workers-1/#service-worker-navigation-preload-response)
- * @see [Specification → W3C TR https://www.w3.org/TR/service-workers/](http://webconcepts.info/specs/W3C/TR/service-workers-1)
+ * @see [Specification → Service Workers](http://webconcepts.info/specs/W3C/TR/service-workers-1)
  */
 export type HttpHeaderServiceWorkerNavigationPreload = 'Service-Worker-Navigation-Preload';
 
@@ -2528,7 +2528,7 @@ export type HttpHeaderSunset = 'Sunset';
  * They follow the form of product tokens in HTTP.
  *
  * @see [Documentation → Edge Architecture Specification](http://www.w3.org/TR/edge-arch/)
- * @see [Specification → W3C TR http://www.w3.org/TR/edge-arch](http://webconcepts.info/specs/W3C/TR/edge-arch)
+ * @see [Specification → Edge Architecture Specification](http://webconcepts.info/specs/W3C/TR/edge-arch)
  */
 export type HttpHeaderSurrogateCapability = 'Surrogate-Capability';
 
@@ -2539,7 +2539,7 @@ export type HttpHeaderSurrogateCapability = 'Surrogate-Capability';
  * control processing and cache behavior.
  *
  * @see [Documentation → Edge Architecture Specification](http://www.w3.org/TR/edge-arch/)
- * @see [Specification → W3C TR http://www.w3.org/TR/edge-arch](http://webconcepts.info/specs/W3C/TR/edge-arch)
+ * @see [Specification → Edge Architecture Specification](http://webconcepts.info/specs/W3C/TR/edge-arch)
  */
 export type HttpHeaderSurrogateControl = 'Surrogate-Control';
 
@@ -2591,7 +2591,7 @@ export type HttpHeaderTimeout = 'Timeout';
  * zero due to the cross-origin restrictions.
  *
  * @see [Documentation → undefined](https://www.w3.org/TR/resource-timing/#timing-allow-origin)
- * @see [Specification → W3C TR https://www.w3.org/TR/resource-timing/](https://www.w3.org/TR/resource-timing/)
+ * @see [Specification → undefined](https://www.w3.org/TR/resource-timing/)
  */
 export type HttpHeaderTimingAllowOrigin = 'Timing-Allow-Origin';
 
@@ -2612,7 +2612,7 @@ export type HttpHeaderTitle = 'Title';
  * interactive change to the tracking status.
  *
  * @see [Documentation → Tracking Preference Expression (DNT)](http://www.w3.org/TR/tracking-dnt/#response-header-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/tracking-dnt](http://webconcepts.info/specs/W3C/TR/tracking-dnt)
+ * @see [Specification → Tracking Preference Expression (DNT)](http://webconcepts.info/specs/W3C/TR/tracking-dnt)
  */
 export type HttpHeaderTk = 'Tk';
 
@@ -2705,7 +2705,7 @@ export type HttpHeaderUpgrade = 'Upgrade';
  * preference as seamless as possible to provide.
  *
  * @see [Documentation → Upgrade Insecure Requests](http://www.w3.org/TR/upgrade-insecure-requests/#preference)
- * @see [Specification → W3C TR http://www.w3.org/TR/upgrade-insecure-requests](http://webconcepts.info/specs/W3C/TR/upgrade-insecure-requests)
+ * @see [Specification → Upgrade Insecure Requests](http://webconcepts.info/specs/W3C/TR/upgrade-insecure-requests)
  */
 export type HttpHeaderUpgradeInsecureRequests = 'Upgrade-Insecure-Requests';
 
@@ -2885,7 +2885,7 @@ export type HttpHeaderXFrameOptions = 'X-Frame-Options';
  * tracing system in a common format.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/trace-context/#traceparent-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/trace-context](http://webconcepts.info/specs/W3C/TR/trace-context)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/trace-context)
  */
 export type HttpHeaderTraceparent = 'Traceparent';
 
@@ -2894,7 +2894,7 @@ export type HttpHeaderTraceparent = 'Traceparent';
  * request position in multiple distributed tracing graphs.
  *
  * @see [Documentation → undefined](http://www.w3.org/TR/trace-context/#tracestate-field)
- * @see [Specification → W3C TR http://www.w3.org/TR/trace-context](http://webconcepts.info/specs/W3C/TR/trace-context)
+ * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/trace-context)
  */
 export type HttpHeaderTracestate = 'Tracestate';
 

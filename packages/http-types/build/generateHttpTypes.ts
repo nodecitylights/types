@@ -5,7 +5,6 @@ import {
 	capitalize,
 	Concept,
 	ConceptValue,
-	getDocumentationLabel,
 	getHttpMethodAsCamelCase,
 	isForbiddenHttpRequestHeader,
 	makeCamelCase,
@@ -17,6 +16,18 @@ import {
 	makeUnionType,
 	READ_FILE_PATH,
 } from '.';
+import {
+	IetfDataTrackerLabelProvider,
+	UrlLabelProvider,
+	W3OrgLabelProvider,
+	WicgLabelProvider,
+} from './UrlLabelProvider';
+
+const labelProvider = new UrlLabelProvider([
+	new W3OrgLabelProvider(),
+	new WicgLabelProvider(),
+	new IetfDataTrackerLabelProvider(),
+]);
 
 function generate(
 	writeFilePath: string,
@@ -57,10 +68,12 @@ function makeFullDocBlock(conceptValue: ConceptValue): string {
 	const specLinks: string[] = [];
 
 	for(const detail of conceptValue.details) {
-		const docLabel = getDocumentationLabel(detail);
+		docLinks.push(makeDocSeeTag(
+			`Documentation → ${labelProvider.provideLabel(detail, true)}`,
+			new URL(detail.documentation)));
 
-		docLinks.push(makeDocSeeTag(`Documentation → ${docLabel}`, new URL(detail.documentation)));
-		specLinks.push(makeDocSeeTag(`Specification → ${detail['spec-name']}`,
+		specLinks.push(makeDocSeeTag(
+			`Specification → ${labelProvider.provideLabel(detail, false)}`,
 			new URL(detail.specification)));
 	}
 
