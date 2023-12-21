@@ -11,7 +11,7 @@
  * response after the request has been fully received and acted
  * upon.
  *
- * @see [Documentation → IETF RFC 7231 §6.2.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.2.1)
+ * @see [Documentation → RFC 7231 §6.2.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.2.1)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode100 = 100;
@@ -26,7 +26,7 @@ export type HttpStatusCode100 = 100;
  * to immediately after the empty line that terminates the 101
  * response.
  *
- * @see [Documentation → IETF RFC 7231 §6.2.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.2.2)
+ * @see [Documentation → RFC 7231 §6.2.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.2.2)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode101 = 101;
@@ -43,7 +43,7 @@ export type HttpStatusCode101 = 101;
  * MUST send a final response after the request has been
  * completed.
  *
- * @see [Documentation → IETF RFC 2518 §10.1](https://datatracker.ietf.org/doc/html/rfc2518#section-10.1)
+ * @see [Documentation → RFC 2518 §10.1](https://datatracker.ietf.org/doc/html/rfc2518#section-10.1)
  * @see [Specification → RFC 2518](http://webconcepts.info/specs/IETF/RFC/2518)
  */
 export type HttpStatusCode102 = 102;
@@ -53,8 +53,8 @@ export type HttpStatusCode102 = 102;
  * the server is likely to send a final request with the
  * headers included in the informational response.
  *
- * @see [Documentation → IETF RFC 8297 §2](https://datatracker.ietf.org/doc/html/rfc8297#section-2)
- * @see [Documentation](https://html.spec.whatwg.org/multipage/semantics.html#early-hints)
+ * @see [Documentation → RFC 8297 §2](https://datatracker.ietf.org/doc/html/rfc8297#section-2)
+ * @see [Documentation → WHATWG HTML Standard](https://html.spec.whatwg.org/multipage/semantics.html#early-hints)
  * @see [Specification → RFC 8297](http://webconcepts.info/specs/IETF/RFC/8297)
  * @see [Specification → WHATWG HTML Standard](https://html.spec.whatwg.org/)
  */
@@ -65,7 +65,7 @@ export type HttpStatusCode103 = 103;
  * succeeded. The payload sent in a 200 response depends on the
  * request method.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.1)
+ * @see [Documentation → RFC 7231 §6.3.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.1)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode200 = 200;
@@ -78,7 +78,7 @@ export type HttpStatusCode200 = 200;
  * response or, if no Location field is received, by the
  * effective request URI.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.2)
+ * @see [Documentation → RFC 7231 §6.3.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.2)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode201 = 201;
@@ -91,7 +91,7 @@ export type HttpStatusCode201 = 201;
  * actually takes place. There is no facility in HTTP for
  * re-sending a status code from an asynchronous operation.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.3)
+ * @see [Documentation → RFC 7231 §6.3.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.3)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode202 = 202;
@@ -102,7 +102,7 @@ export type HttpStatusCode202 = 202;
  * payload has been modified from that of the origin server's
  * 200 (OK) response by a transforming proxy.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.4)
+ * @see [Documentation → RFC 7231 §6.3.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.4)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode203 = 203;
@@ -115,7 +115,7 @@ export type HttpStatusCode203 = 203;
  * resource and its selected representation after the requested
  * action was applied.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.5)
+ * @see [Documentation → RFC 7231 §6.3.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.5)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode204 = 204;
@@ -127,7 +127,7 @@ export type HttpStatusCode204 = 204;
  * be sent, to its original state as received from the origin
  * server.
  *
- * @see [Documentation → IETF RFC 7231 §6.3.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.6)
+ * @see [Documentation → RFC 7231 §6.3.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.3.6)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode205 = 205;
@@ -139,7 +139,7 @@ export type HttpStatusCode205 = 205;
  * selected representation that correspond to the satisfiable
  * ranges found in the request's Range header field.
  *
- * @see [Documentation → IETF RFC 7233 §4.1](https://datatracker.ietf.org/doc/html/rfc7233#section-4.1)
+ * @see [Documentation → RFC 7233 §4.1](https://datatracker.ietf.org/doc/html/rfc7233#section-4.1)
  * @see [Specification → RFC 7233](http://webconcepts.info/specs/IETF/RFC/7233)
  */
 export type HttpStatusCode206 = 206;
@@ -148,7 +148,7 @@ export type HttpStatusCode206 = 206;
  * The 207 (Multi-Status) status code provides status for
  * multiple independent operations.
  *
- * @see [Documentation → IETF RFC 4918 §11.1](https://datatracker.ietf.org/doc/html/rfc4918#section-11.1)
+ * @see [Documentation → RFC 4918 §11.1](https://datatracker.ietf.org/doc/html/rfc4918#section-11.1)
  * @see [Specification → RFC 4918](http://webconcepts.info/specs/IETF/RFC/4918)
  */
 export type HttpStatusCode207 = 207;
@@ -163,7 +163,7 @@ export type HttpStatusCode207 = 207;
  * bindings will use the 208 status, and no DAV:response
  * elements for their descendants are included.
  *
- * @see [Documentation → IETF RFC 5842 §7.1](https://datatracker.ietf.org/doc/html/rfc5842#section-7.1)
+ * @see [Documentation → RFC 5842 §7.1](https://datatracker.ietf.org/doc/html/rfc5842#section-7.1)
  * @see [Specification → RFC 5842](http://webconcepts.info/specs/IETF/RFC/5842)
  */
 export type HttpStatusCode208 = 208;
@@ -177,7 +177,7 @@ export type HttpStatusCode208 = 208;
  * responses, as appropriate for the specific
  * instance-manipulation(s).
  *
- * @see [Documentation → IETF RFC 3229 §10.4.1](https://datatracker.ietf.org/doc/html/rfc3229#section-10.4.1)
+ * @see [Documentation → RFC 3229 §10.4.1](https://datatracker.ietf.org/doc/html/rfc3229#section-10.4.1)
  * @see [Specification → RFC 3229](http://webconcepts.info/specs/IETF/RFC/3229)
  */
 export type HttpStatusCode226 = 226;
@@ -193,7 +193,7 @@ export type HttpStatusCode226 = 226;
  * reactive negotiation to select the most appropriate
  * representation(s) for its needs.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.1)
+ * @see [Documentation → RFC 7231 §6.4.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.1)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode300 = 300;
@@ -207,7 +207,7 @@ export type HttpStatusCode300 = 300;
  * request URI to one or more of the new references sent by the
  * server, where possible.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.2)
+ * @see [Documentation → RFC 7231 §6.4.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.2)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode301 = 301;
@@ -219,7 +219,7 @@ export type HttpStatusCode301 = 301;
  * ought to continue to use the effective request URI for
  * future requests.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.3)
+ * @see [Documentation → RFC 7231 §6.4.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.3)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode302 = 302;
@@ -236,7 +236,7 @@ export type HttpStatusCode302 = 302;
  * new URI in the Location header field is not considered
  * equivalent to the effective request URI.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.4)
+ * @see [Documentation → RFC 7231 §6.4.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.4)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode303 = 303;
@@ -253,7 +253,7 @@ export type HttpStatusCode303 = 303;
  * the client to make use of that stored representation as if
  * it were the payload of a 200 (OK) response.
  *
- * @see [Documentation → IETF RFC 7232 §4.1](https://datatracker.ietf.org/doc/html/rfc7232#section-4.1)
+ * @see [Documentation → RFC 7232 §4.1](https://datatracker.ietf.org/doc/html/rfc7232#section-4.1)
  * @see [Specification → RFC 7232](http://webconcepts.info/specs/IETF/RFC/7232)
  */
 export type HttpStatusCode304 = 304;
@@ -262,7 +262,7 @@ export type HttpStatusCode304 = 304;
  * The 305 (Use Proxy) status code was defined in a previous
  * version of HTTP/1.1 and is now deprecated.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.5)
+ * @see [Documentation → RFC 7231 §6.4.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.5)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode305 = 305;
@@ -271,7 +271,7 @@ export type HttpStatusCode305 = 305;
  * The 306 status code was defined in a previous version of
  * HTTP/1.1, is no longer used, and the code is reserved.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.6)
+ * @see [Documentation → RFC 7231 §6.4.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.6)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode306 = 306;
@@ -285,7 +285,7 @@ export type HttpStatusCode306 = 306;
  * continue using the original effective request URI for future
  * requests.
  *
- * @see [Documentation → IETF RFC 7231 §6.4.7](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.7)
+ * @see [Documentation → RFC 7231 §6.4.7](https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.7)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode307 = 307;
@@ -296,7 +296,7 @@ export type HttpStatusCode307 = 307;
  * any future references to this resource ought to use one of
  * the enclosed URIs.
  *
- * @see [Documentation → IETF RFC 7538 §3](https://datatracker.ietf.org/doc/html/rfc7538#section-3)
+ * @see [Documentation → RFC 7538 §3](https://datatracker.ietf.org/doc/html/rfc7538#section-3)
  * @see [Specification → RFC 7538](http://webconcepts.info/specs/IETF/RFC/7538)
  */
 export type HttpStatusCode308 = 308;
@@ -308,7 +308,7 @@ export type HttpStatusCode308 = 308;
  * syntax, invalid request message framing, or deceptive
  * request routing).
  *
- * @see [Documentation → IETF RFC 7231 §6.5.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.1)
+ * @see [Documentation → RFC 7231 §6.5.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.1)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode400 = 400;
@@ -321,7 +321,7 @@ export type HttpStatusCode400 = 400;
  * WWW-Authenticate header field (Section 4.1) containing at
  * least one challenge applicable to the target resource.
  *
- * @see [Documentation → IETF RFC 7235 §3.1](https://datatracker.ietf.org/doc/html/rfc7235#section-3.1)
+ * @see [Documentation → RFC 7235 §3.1](https://datatracker.ietf.org/doc/html/rfc7235#section-3.1)
  * @see [Specification → RFC 7235](http://webconcepts.info/specs/IETF/RFC/7235)
  */
 export type HttpStatusCode401 = 401;
@@ -330,7 +330,7 @@ export type HttpStatusCode401 = 401;
  * The 402 (Payment Required) status code is reserved for
  * future use.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.2)
+ * @see [Documentation → RFC 7231 §6.5.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.2)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode402 = 402;
@@ -342,7 +342,7 @@ export type HttpStatusCode402 = 402;
  * forbidden can describe that reason in the response payload
  * (if any).
  *
- * @see [Documentation → IETF RFC 7231 §6.5.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.3)
+ * @see [Documentation → RFC 7231 §6.5.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.3)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode403 = 403;
@@ -357,7 +357,7 @@ export type HttpStatusCode403 = 403;
  * knows, presumably through some configurable means, that the
  * condition is likely to be permanent.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4)
+ * @see [Documentation → RFC 7231 §6.5.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode404 = 404;
@@ -370,7 +370,7 @@ export type HttpStatusCode404 = 404;
  * containing a list of the target resource's currently
  * supported methods.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.5)
+ * @see [Documentation → RFC 7231 §6.5.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.5)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode405 = 405;
@@ -383,7 +383,7 @@ export type HttpStatusCode405 = 405;
  * and the server is unwilling to supply a default
  * representation.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.6)
+ * @see [Documentation → RFC 7231 §6.5.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.6)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode406 = 406;
@@ -397,7 +397,7 @@ export type HttpStatusCode406 = 406;
  * target resource. The client MAY repeat the request with a
  * new or replaced Proxy-Authorization header field.
  *
- * @see [Documentation → IETF RFC 7235 §3.2](https://datatracker.ietf.org/doc/html/rfc7235#section-3.2)
+ * @see [Documentation → RFC 7235 §3.2](https://datatracker.ietf.org/doc/html/rfc7235#section-3.2)
  * @see [Specification → RFC 7235](http://webconcepts.info/specs/IETF/RFC/7235)
  */
 export type HttpStatusCode407 = 407;
@@ -412,7 +412,7 @@ export type HttpStatusCode407 = 407;
  * request in transit, the client MAY repeat that request on a
  * new connection.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.7](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.7)
+ * @see [Documentation → RFC 7231 §6.5.7](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.7)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode408 = 408;
@@ -426,7 +426,7 @@ export type HttpStatusCode408 = 408;
  * generate a payload that includes enough information for a
  * user to recognize the source of the conflict.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.8](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.8)
+ * @see [Documentation → RFC 7231 §6.5.8](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.8)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode409 = 409;
@@ -439,7 +439,7 @@ export type HttpStatusCode409 = 409;
  * determine, whether or not the condition is permanent, the
  * status code 404 (Not Found) ought to be used instead.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.9](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.9)
+ * @see [Documentation → RFC 7231 §6.5.9](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.9)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode410 = 410;
@@ -451,7 +451,7 @@ export type HttpStatusCode410 = 410;
  * a valid Content-Length header field containing the length of
  * the message body in the request message.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.10](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.10)
+ * @see [Documentation → RFC 7231 §6.5.10](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.10)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode411 = 411;
@@ -465,7 +465,7 @@ export type HttpStatusCode411 = 411;
  * and, thus, prevent the request method from being applied if
  * the target resource is in an unexpected state.
  *
- * @see [Documentation → IETF RFC 7232 §4.2](https://datatracker.ietf.org/doc/html/rfc7232#section-4.2)
+ * @see [Documentation → RFC 7232 §4.2](https://datatracker.ietf.org/doc/html/rfc7232#section-4.2)
  * @see [Specification → RFC 7232](http://webconcepts.info/specs/IETF/RFC/7232)
  */
 export type HttpStatusCode412 = 412;
@@ -477,7 +477,7 @@ export type HttpStatusCode412 = 412;
  * process. The server MAY close the connection to prevent the
  * client from continuing the request.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.11](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.11)
+ * @see [Documentation → RFC 7231 §6.5.11](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.11)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode413 = 413;
@@ -488,7 +488,7 @@ export type HttpStatusCode413 = 413;
  * request-target is longer than the server is willing to
  * interpret.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.12](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.12)
+ * @see [Documentation → RFC 7231 §6.5.12](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.12)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode414 = 414;
@@ -501,7 +501,7 @@ export type HttpStatusCode414 = 414;
  * request's indicated Content-Type or Content-Encoding, or as
  * a result of inspecting the data directly.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.13](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.13)
+ * @see [Documentation → RFC 7231 §6.5.13](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.13)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode415 = 415;
@@ -514,7 +514,7 @@ export type HttpStatusCode415 = 415;
  * rejected due to invalid ranges or an excessive request of
  * small or overlapping ranges.
  *
- * @see [Documentation → IETF RFC 7233 §4.4](https://datatracker.ietf.org/doc/html/rfc7233#section-4.4)
+ * @see [Documentation → RFC 7233 §4.4](https://datatracker.ietf.org/doc/html/rfc7233#section-4.4)
  * @see [Specification → RFC 7233](http://webconcepts.info/specs/IETF/RFC/7233)
  */
 export type HttpStatusCode416 = 416;
@@ -524,7 +524,7 @@ export type HttpStatusCode416 = 416;
  * expectation given in the request's Expect header field could
  * not be met by at least one of the inbound servers.
  *
- * @see [Documentation → IETF RFC 7231 §6.5.14](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.14)
+ * @see [Documentation → RFC 7231 §6.5.14](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.14)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode417 = 417;
@@ -534,7 +534,7 @@ export type HttpStatusCode417 = 417;
  * the error code "418 I'm a teapot". The resulting entity body
  * MAY be short and stout.
  *
- * @see [Documentation → IETF RFC 2324 §2.3.2](https://datatracker.ietf.org/doc/html/rfc2324#section-2.3.2)
+ * @see [Documentation → RFC 2324 §2.3.2](https://datatracker.ietf.org/doc/html/rfc2324#section-2.3.2)
  * @see [Specification → RFC 2324](http://webconcepts.info/specs/IETF/RFC/2324)
  */
 export type HttpStatusCode418 = 418;
@@ -546,7 +546,7 @@ export type HttpStatusCode418 = 418;
  * configured to produce responses for the combination of
  * scheme and authority that are included in the request URI.
  *
- * @see [Documentation → IETF RFC 7540 §9.1.2](https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2)
+ * @see [Documentation → RFC 7540 §9.1.2](https://datatracker.ietf.org/doc/html/rfc7540#section-9.1.2)
  * @see [Specification → RFC 7540](http://webconcepts.info/specs/IETF/RFC/7540)
  */
 export type HttpStatusCode421 = 421;
@@ -562,7 +562,7 @@ export type HttpStatusCode421 = 421;
  * well-formed (i.e., syntactically correct), but semantically
  * erroneous, XML instructions.
  *
- * @see [Documentation → IETF RFC 4918 §11.2](https://datatracker.ietf.org/doc/html/rfc4918#section-11.2)
+ * @see [Documentation → RFC 4918 §11.2](https://datatracker.ietf.org/doc/html/rfc4918#section-11.2)
  * @see [Specification → RFC 4918](http://webconcepts.info/specs/IETF/RFC/4918)
  */
 export type HttpStatusCode422 = 422;
@@ -573,7 +573,7 @@ export type HttpStatusCode422 = 422;
  * an appropriate precondition or postcondition code, such as
  * 'lock-token-submitted' or 'no-conflicting-lock'.
  *
- * @see [Documentation → IETF RFC 4918 §11.3](https://datatracker.ietf.org/doc/html/rfc4918#section-11.3)
+ * @see [Documentation → RFC 4918 §11.3](https://datatracker.ietf.org/doc/html/rfc4918#section-11.3)
  * @see [Specification → RFC 4918](http://webconcepts.info/specs/IETF/RFC/4918)
  */
 export type HttpStatusCode423 = 423;
@@ -586,7 +586,7 @@ export type HttpStatusCode423 = 423;
  * fails, then, at minimum, the rest of the commands will also
  * fail with 424 (Failed Dependency).
  *
- * @see [Documentation → IETF RFC 4918 §11.4](https://datatracker.ietf.org/doc/html/rfc4918#section-11.4)
+ * @see [Documentation → RFC 4918 §11.4](https://datatracker.ietf.org/doc/html/rfc4918#section-11.4)
  * @see [Specification → RFC 4918](http://webconcepts.info/specs/IETF/RFC/4918)
  */
 export type HttpStatusCode424 = 424;
@@ -600,7 +600,7 @@ export type HttpStatusCode424 = 424;
  * automatically, but any retries MUST NOT be sent in early
  * data.
  *
- * @see [Documentation → IETF RFC 8470 §5.2](https://datatracker.ietf.org/doc/html/rfc8470#section-5.2)
+ * @see [Documentation → RFC 8470 §5.2](https://datatracker.ietf.org/doc/html/rfc8470#section-5.2)
  * @see [Specification → RFC 8470](http://webconcepts.info/specs/IETF/RFC/8470)
  */
 export type HttpStatusCode425 = 425;
@@ -613,7 +613,7 @@ export type HttpStatusCode425 = 425;
  * Upgrade header field in a 426 response to indicate the
  * required protocol(s).
  *
- * @see [Documentation → IETF RFC 7231 §6.5.15](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.15)
+ * @see [Documentation → RFC 7231 §6.5.15](https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.15)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode426 = 426;
@@ -622,7 +622,7 @@ export type HttpStatusCode426 = 426;
  * The 428 status code indicates that the origin server
  * requires the request to be conditional.
  *
- * @see [Documentation → IETF RFC 6585 §3](https://datatracker.ietf.org/doc/html/rfc6585#section-3)
+ * @see [Documentation → RFC 6585 §3](https://datatracker.ietf.org/doc/html/rfc6585#section-3)
  * @see [Specification → RFC 6585](http://webconcepts.info/specs/IETF/RFC/6585)
  */
 export type HttpStatusCode428 = 428;
@@ -631,7 +631,7 @@ export type HttpStatusCode428 = 428;
  * The 429 status code indicates that the user has sent too
  * many requests in a given amount of time ("rate limiting").
  *
- * @see [Documentation → IETF RFC 6585 §4](https://datatracker.ietf.org/doc/html/rfc6585#section-4)
+ * @see [Documentation → RFC 6585 §4](https://datatracker.ietf.org/doc/html/rfc6585#section-4)
  * @see [Specification → RFC 6585](http://webconcepts.info/specs/IETF/RFC/6585)
  */
 export type HttpStatusCode429 = 429;
@@ -642,7 +642,7 @@ export type HttpStatusCode429 = 429;
  * large. The request MAY be resubmitted after reducing the
  * size of the request header fields.
  *
- * @see [Documentation → IETF RFC 6585 §5](https://datatracker.ietf.org/doc/html/rfc6585#section-5)
+ * @see [Documentation → RFC 6585 §5](https://datatracker.ietf.org/doc/html/rfc6585#section-5)
  * @see [Specification → RFC 6585](http://webconcepts.info/specs/IETF/RFC/6585)
  */
 export type HttpStatusCode431 = 431;
@@ -654,7 +654,7 @@ export type HttpStatusCode431 = 431;
  * of legal demand typically most directly affects the
  * operations of ISPs and search engines.
  *
- * @see [Documentation → IETF RFC 7725 §3](https://datatracker.ietf.org/doc/html/rfc7725#section-3)
+ * @see [Documentation → RFC 7725 §3](https://datatracker.ietf.org/doc/html/rfc7725#section-3)
  * @see [Specification → RFC 7725](http://webconcepts.info/specs/IETF/RFC/7725)
  */
 export type HttpStatusCode451 = 451;
@@ -664,7 +664,7 @@ export type HttpStatusCode451 = 451;
  * the server encountered an unexpected condition that
  * prevented it from fulfilling the request.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.1)
+ * @see [Documentation → RFC 7231 §6.6.1](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.1)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode500 = 500;
@@ -676,7 +676,7 @@ export type HttpStatusCode500 = 500;
  * the server does not recognize the request method and is not
  * capable of supporting it for any resource.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.2)
+ * @see [Documentation → RFC 7231 §6.6.2](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.2)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode501 = 501;
@@ -687,7 +687,7 @@ export type HttpStatusCode501 = 501;
  * response from an inbound server it accessed while attempting
  * to fulfill the request.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.3)
+ * @see [Documentation → RFC 7231 §6.6.3](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.3)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode502 = 502;
@@ -700,7 +700,7 @@ export type HttpStatusCode502 = 502;
  * Retry-After header field to suggest an appropriate amount of
  * time for the client to wait before retrying the request.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.4)
+ * @see [Documentation → RFC 7231 §6.6.4](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.4)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode503 = 503;
@@ -711,7 +711,7 @@ export type HttpStatusCode503 = 503;
  * a timely response from an upstream server it needed to
  * access in order to complete the request.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.5)
+ * @see [Documentation → RFC 7231 §6.6.5](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.5)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode504 = 504;
@@ -727,7 +727,7 @@ export type HttpStatusCode504 = 504;
  * describes why that version is not supported and what other
  * protocols are supported by that server.
  *
- * @see [Documentation → IETF RFC 7231 §6.6.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.6)
+ * @see [Documentation → RFC 7231 §6.6.6](https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.6)
  * @see [Specification → RFC 7231](http://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpStatusCode505 = 505;
@@ -739,7 +739,7 @@ export type HttpStatusCode505 = 505;
  * itself, and is therefore not a proper end point in the
  * negotiation process.
  *
- * @see [Documentation → IETF RFC 7725 §3](https://datatracker.ietf.org/doc/html/rfc7725#section-3)
+ * @see [Documentation → RFC 7725 §3](https://datatracker.ietf.org/doc/html/rfc7725#section-3)
  * @see [Specification → RFC 2295](http://webconcepts.info/specs/IETF/RFC/2295)
  */
 export type HttpStatusCode506 = 506;
@@ -753,7 +753,7 @@ export type HttpStatusCode506 = 506;
  * the result of a user action, the request MUST NOT be
  * repeated until it is requested by a separate user action.
  *
- * @see [Documentation → IETF RFC 4918 §11.5](https://datatracker.ietf.org/doc/html/rfc4918#section-11.5)
+ * @see [Documentation → RFC 4918 §11.5](https://datatracker.ietf.org/doc/html/rfc4918#section-11.5)
  * @see [Specification → RFC 4918](http://webconcepts.info/specs/IETF/RFC/4918)
  */
 export type HttpStatusCode507 = 507;
@@ -765,7 +765,7 @@ export type HttpStatusCode507 = 507;
  * infinity". This status indicates that the entire operation
  * failed.
  *
- * @see [Documentation → IETF RFC 5842 §7.1](https://datatracker.ietf.org/doc/html/rfc5842#section-7.1)
+ * @see [Documentation → RFC 5842 §7.1](https://datatracker.ietf.org/doc/html/rfc5842#section-7.1)
  * @see [Specification → RFC 5842](http://webconcepts.info/specs/IETF/RFC/5842)
  */
 export type HttpStatusCode508 = 508;
@@ -777,7 +777,7 @@ export type HttpStatusCode508 = 508;
  * outside the scope of this specification to specify how the
  * extensions inform the client.
  *
- * @see [Documentation → IETF RFC 2774 §7](https://datatracker.ietf.org/doc/html/rfc2774#section-7)
+ * @see [Documentation → RFC 2774 §7](https://datatracker.ietf.org/doc/html/rfc2774#section-7)
  * @see [Specification → RFC 2774](http://webconcepts.info/specs/IETF/RFC/2774)
  */
 export type HttpStatusCode510 = 510;
@@ -786,7 +786,7 @@ export type HttpStatusCode510 = 510;
  * The 511 status code indicates that the client needs to
  * authenticate to gain network access.
  *
- * @see [Documentation → IETF RFC 6585 §6](https://datatracker.ietf.org/doc/html/rfc6585#section-6)
+ * @see [Documentation → RFC 6585 §6](https://datatracker.ietf.org/doc/html/rfc6585#section-6)
  * @see [Specification → RFC 6585](http://webconcepts.info/specs/IETF/RFC/6585)
  */
 export type HttpStatusCode511 = 511;

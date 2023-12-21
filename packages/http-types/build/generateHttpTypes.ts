@@ -18,7 +18,7 @@ import {
 	READ_FILE_PATH,
 } from '.';
 
-function createRunGenerator(
+function generate(
 	writeFilePath: string,
 	conceptName: string,
 	endMessage: (concept: Concept) => string,
@@ -57,9 +57,9 @@ function makeFullDocBlock(conceptValue: ConceptValue): string {
 	const specLinks: string[] = [];
 
 	for(const detail of conceptValue.details) {
-		const docLabel = getDocumentationLabel(new URL(detail.documentation));
+		const docLabel = getDocumentationLabel(detail);
 
-		docLinks.push(makeDocSeeTag(`Documentation${docLabel}`, new URL(detail.documentation)));
+		docLinks.push(makeDocSeeTag(`Documentation → ${docLabel}`, new URL(detail.documentation)));
 		specLinks.push(makeDocSeeTag(`Specification → ${detail['spec-name']}`,
 			new URL(detail.specification)));
 	}
@@ -75,7 +75,7 @@ function makeFullDocBlock(conceptValue: ConceptValue): string {
 }
 
 // Generate HTTP methods
-createRunGenerator(
+generate(
 	'./src/httpMethods.ts',
 	'http-method',
 	(concepts) => `Exported ${concepts.values.length} HTTP methods`,
@@ -100,7 +100,7 @@ createRunGenerator(
 );
 
 // Generate HTTP status codes
-createRunGenerator(
+generate(
 	'./src/httpStatusCodes.ts',
 	'http-status-code',
 	(concepts) => `Exported ${concepts.values.length} HTTP status codes`,
@@ -161,7 +161,7 @@ createRunGenerator(
 );
 
 // Generate HTTP headers
-createRunGenerator(
+generate(
 	'./src/httpHeaders.ts',
 	'http-header',
 	(concept) => `Exported ${concept.values.length} HTTP headers`,
