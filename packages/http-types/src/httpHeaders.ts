@@ -2884,8 +2884,8 @@ export type HttpHeaderXFrameOptions = 'X-Frame-Options';
  * The traceparent header represents the incoming request in a
  * tracing system in a common format.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/trace-context/#traceparent-field)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/trace-context)
+ * @see [Documentation → Trace Context](http://www.w3.org/TR/trace-context/#traceparent-field)
+ * @see [Specification → Trace Context](http://webconcepts.info/specs/W3C/TR/trace-context)
  */
 export type HttpHeaderTraceparent = 'Traceparent';
 
@@ -2893,8 +2893,8 @@ export type HttpHeaderTraceparent = 'Traceparent';
  * The tracestate HTTP header field conveys information about
  * request position in multiple distributed tracing graphs.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/trace-context/#tracestate-field)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/trace-context)
+ * @see [Documentation → Trace Context](http://www.w3.org/TR/trace-context/#tracestate-field)
+ * @see [Specification → Trace Context](http://webconcepts.info/specs/W3C/TR/trace-context)
  */
 export type HttpHeaderTracestate = 'Tracestate';
 

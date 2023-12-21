@@ -39,6 +39,7 @@
 	"SOAP": "Simple Object Access Protocol (SOAP) 1.1",
 	"tabular-data-model": "Model for Tabular Data and Metadata on the Web",
 	"timesheet": "SMIL Timesheets 1.0",
+	"trace-context": "Trace Context",
 	"tracking-dnt": "Tracking Preference Expression (DNT)",
 	"trig": "RDF 1.1 TriG",
 	"upgrade-insecure-requests": "Upgrade Insecure Requests",
