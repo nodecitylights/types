@@ -1065,7 +1065,7 @@ export type HttpHeaderExpect = 'Expect';
  * that UAs should evaluate connections to the host emitting
  * the header field for CT compliance.
  *
- * @see [Documentation → RFC 9239 §2.1](https://datatracker.ietf.org/doc/html/rfc9239#section-2.1)
+ * @see [Documentation → RFC 9163](https://datatracker.ietf.org/doc/html/rfc9163)
  * @see [Specification → RFC 9163](https://webconcepts.info/specs/IETF/RFC/9163)
  */
 export type HttpHeaderExpectCT = 'Expect-CT';
@@ -1187,7 +1187,7 @@ export type HttpHeaderIM = 'IM';
  * retries of the same request. The "Idempotency-Key" HTTP
  * request header field carries this key.
  *
- * @see [Documentation → Internet Draft ietf-httpapi-idempotency-key-header-00 §2](https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-00#section-2)
+ * @see [Documentation → Internet Draft ietf-httpapi-idempotency-key-header §2](https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-00#section-2)
  * @see [Specification → Internet Draft ietf-httpapi-idempotency-key-header](https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-idempotency-key-header)
  */
 export type HttpHeaderIdempotencyKey = 'Idempotency-Key';
@@ -1398,7 +1398,7 @@ export type HttpHeaderLockToken = 'Lock-Token';
  * ensuring full conformance (where possible) when exporting
  * HTTP messages to strict MIME environments.
  *
- * @see [Documentation → ](https://datatracker.ietf.org/doc/html/rfc7231#appendix-A.1)
+ * @see [Documentation → RFC 7231](https://datatracker.ietf.org/doc/html/rfc7231#appendix-A.1)
  * @see [Specification → RFC 7231](https://webconcepts.info/specs/IETF/RFC/7231)
  */
 export type HttpHeaderMIMEVersion = 'MIME-Version';
@@ -1622,7 +1622,7 @@ export type HttpHeaderPermissionsPolicy = 'Permissions-Policy';
  * field-value indicates the version of POE that a client
  * supports.
  *
- * @see [Documentation → Internet Draft nottingham-http-poe-00 §4](https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-4)
+ * @see [Documentation → Internet Draft nottingham-http-poe §4](https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-4)
  * @see [Specification → Internet Draft nottingham-http-poe](https://webconcepts.info/specs/IETF/I-D/nottingham-http-poe)
  */
 export type HttpHeaderPOE = 'POE';
@@ -1635,7 +1635,7 @@ export type HttpHeaderPOE = 'POE';
  * the POE-Links response header SHOULD correspond to links
  * found in the content of the response body.
  *
- * @see [Documentation → Internet Draft nottingham-http-poe-00 §3](https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-3)
+ * @see [Documentation → Internet Draft nottingham-http-poe §3](https://datatracker.ietf.org/doc/html/draft-nottingham-http-poe-00#section-3)
  * @see [Specification → Internet Draft nottingham-http-poe](https://webconcepts.info/specs/IETF/I-D/nottingham-http-poe)
  */
 export type HttpHeaderPOELinks = 'POE-Links';
@@ -1873,7 +1873,7 @@ export type HttpHeaderRateLimitRemaining = 'RateLimit-Remaining';
  * the number of seconds until the quota resets, or the
  * timestamp when the quota resets.
  *
- * @see [Documentation → Internet Draft polli-ratelimit-headers §3.3](https://datatracker.ietf.org/doc/html/draft-polli-ratelimit-headers#section-3.3)
+ * @see [Documentation → Internet Draft ietf-httpapi-ratelimit-headers §3.3](https://datatracker.ietf.org/doc/html/draft-polli-ratelimit-headers#section-3.3)
  * @see [Specification → Internet Draft ietf-httpapi-ratelimit-headers](https://webconcepts.info/specs/IETF/I-D/ietf-httpapi-ratelimit-headers)
  */
 export type HttpHeaderRateLimitReset = 'RateLimit-Reset';

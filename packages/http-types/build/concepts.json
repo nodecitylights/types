@@ -1832,7 +1832,7 @@
 				"details":[
 					{
 						"description":"The Expect-CT response header field is a new field defined in this specification. It is used by a server to indicate that UAs should evaluate connections to the host emitting the header field for CT compliance.",
-						"documentation":"https://datatracker.ietf.org/doc/html/rfc9239#section-2.1",
+						"documentation":"https://datatracker.ietf.org/doc/html/rfc9163",
 						"specification":"https://webconcepts.info/specs/IETF/RFC/9163",
 						"spec-name":"RFC 9163"
 					}
@@ -5442,7 +5442,7 @@
 				"details":[
 					{
 						"description":"The 506 status code indicates that the server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.",
-						"documentation":"https://datatracker.ietf.org/doc/html/rfc7725#section-3",
+						"documentation":"https://datatracker.ietf.org/doc/html/rfc2295#section-8.1",
 						"specification":"https://webconcepts.info/specs/IETF/RFC/2295",
 						"spec-name":"RFC 2295"
 					}
