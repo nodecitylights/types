@@ -1,21 +1,10 @@
 import fs from 'fs';
 import wordWrap from 'word-wrap';
 
-import {
-	capitalize,
-	Concept,
-	ConceptValue,
-	getHttpMethodAsCamelCase,
-	isForbiddenHttpRequestHeader,
-	makeCamelCase,
-	makeDocBlock,
-	makeDocSeeTag,
-	makeExcludeType,
-	makeStringType,
-	makeType,
-	makeUnionType,
-	READ_FILE_PATH,
-} from '.';
+import type { Concept, ConceptValue } from './conceptTypes';
+import { makeDocBlock, makeDocSeeTag } from './docUtils';
+import { capitalize, getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader, makeCamelCase } from './stringUtils';
+import { makeExcludeType, makeStringType, makeType, makeUnionType } from './typeUtils';
 import {
 	IetfDataTrackerLabelProvider,
 	UrlLabelProvider,
@@ -23,6 +12,7 @@ import {
 	WicgLabelProvider,
 } from './UrlLabelProvider';
 
+const READ_FILE_PATH = './build/concepts.json';
 const labelProvider = new UrlLabelProvider([
 	new W3OrgLabelProvider(),
 	new WicgLabelProvider(),
