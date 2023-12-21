@@ -2590,8 +2590,8 @@ export type HttpHeaderTimeout = 'Timeout';
  * allowed to see values of attributes that would have been
  * zero due to the cross-origin restrictions.
  *
- * @see [Documentation → undefined](https://www.w3.org/TR/resource-timing/#timing-allow-origin)
- * @see [Specification → undefined](https://www.w3.org/TR/resource-timing/)
+ * @see [Documentation → Resource Timing](https://www.w3.org/TR/resource-timing/#timing-allow-origin)
+ * @see [Specification → Resource Timing](https://www.w3.org/TR/resource-timing/)
  */
 export type HttpHeaderTimingAllowOrigin = 'Timing-Allow-Origin';
 

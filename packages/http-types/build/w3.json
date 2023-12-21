@@ -30,6 +30,7 @@
 	"preload": "Preload",
 	"referrer-policy": "Referrer Policy",
 	"reporting-1": "Reporting API",
+	"resource-timing": "Resource Timing",
 	"rdf-json": "RDF 1.1 JSON Alternate Serialization (RDF/JSON)",
 	"rdf11-concepts": "RDF 1.1 Concepts and Abstract Syntax",
 	"resource-hints": "Resource Hints",
