@@ -1087,6 +1087,19 @@
 				]
 			},
 			{
+				"value":"Available-Dictionary",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Available-Dictionary",
+				"details":[
+					{
+						"description":"When a HTTP client makes a request for a resource for which it has an appropriate dictionary, it can add a \"Available-Dictionary\" request header to the request to indicate to the server that it has a dictionary available to use for compression.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary",
+						"spec-name":"Internet Draft ietf-httpbis-compression-dictionary"
+					}
+				]
+			},
+			{
 				"value":"C-Ext",
 				"concept":"https://webconcepts.info/concepts/http-header/",
 				"id":"https://webconcepts.info/concepts/http-header/C-Ext",
@@ -1317,6 +1330,19 @@
 						"documentation":"https://datatracker.ietf.org/doc/html/rfc2068#section-14.11",
 						"specification":"https://webconcepts.info/specs/IETF/RFC/2068",
 						"spec-name":"RFC 2068"
+					}
+				]
+			},
+			{
+				"value":"Content-Dictionary",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Content-Dictionary",
+				"details":[
+					{
+						"description":"",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary",
+						"spec-name":"Internet Draft ietf-httpbis-compression-dictionary"
 					}
 				]
 			},
@@ -1744,6 +1770,19 @@
 						"documentation":"https://www.w3.org/TR/device-memory-1/#sec-device-memory-client-hint-header",
 						"specification":"https://webconcepts.info/specs/W3C/TR/device-memory-1",
 						"spec-name":"W3C TR https://www.w3.org/TR/device-memory-1"
+					}
+				]
+			},
+			{
+				"value":"Dictionary-ID",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Dictionary-ID",
+				"details":[
+					{
+						"description":"When a HTTP client makes a request for a resource for which it has an appropriate dictionary and the dictionary was stored with a server-provided \"id\" in the Use-As-Dictionary response then the client MUST echo the stored \"id\" in a \"Dictionary-ID\" request header.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary",
+						"spec-name":"Internet Draft ietf-httpbis-compression-dictionary"
 					}
 				]
 			},
@@ -3765,6 +3804,19 @@
 						"documentation":"https://datatracker.ietf.org/doc/html/rfc8030#section-5.3",
 						"specification":"https://webconcepts.info/specs/IETF/RFC/8030",
 						"spec-name":"RFC 8030"
+					}
+				]
+			},
+			{
+				"value":"Use-As-Dictionary",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Use-As-Dictionary",
+				"details":[
+					{
+						"description":"When responding to a HTTP Request, a server can advertise that the response can be used as a dictionary for future requests for URLs that match the rules specified in the \"Use-As-Dictionary\" response header.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary",
+						"spec-name":"Internet Draft ietf-httpbis-compression-dictionary"
 					}
 				]
 			},
