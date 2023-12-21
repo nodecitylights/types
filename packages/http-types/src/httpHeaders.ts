@@ -503,6 +503,26 @@ export type HttpHeaderCDNCacheControl = 'CDN-Cache-Control';
 export type HttpHeaderCacheControl = 'Cache-Control';
 
 /**
+ * The "Cache-Groups" response header provides a way of
+ * describing the relationships between a set of stored
+ * responses in HTTP caches by associating them with one or
+ * more opaque strings.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-cache-groups](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-2)
+ * @see [Specification → Internet Draft ietf-httpbis-cache-groups](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups)
+ */
+export type HttpHeaderCacheGroups = 'Cache-Groups';
+
+/**
+ * The "Cache-Group-Invalidation" response header that allows a
+ * state-changing response to trigger a group invalidation.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-cache-groups](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-3)
+ * @see [Specification → Internet Draft ietf-httpbis-cache-groups](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups)
+ */
+export type HttpHeaderCacheGroupInvalidation = 'Cache-Group-Invalidation';
+
+/**
  * For precisely identifying transferred content independent of
  * the used URL and independent of additional header fields in
  * the context of content negotiation, the Cache-NT header
@@ -2961,6 +2981,8 @@ export type HttpHeader =
 	| HttpHeaderCPEPInfo
 	| HttpHeaderCDNCacheControl
 	| HttpHeaderCacheControl
+	| HttpHeaderCacheGroups
+	| HttpHeaderCacheGroupInvalidation
 	| HttpHeaderCacheNT
 	| HttpHeaderCacheStatus
 	| HttpHeaderCalManagedID
