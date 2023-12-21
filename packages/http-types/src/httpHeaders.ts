@@ -971,8 +971,8 @@ export type HttpHeaderDestination = 'Destination';
  * the client's device memory i.e. approximate amount of ram in
  * GiB.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/device-memory-1/#sec-device-memory-client-hint-header)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/device-memory-1)
+ * @see [Documentation → Device Memory](http://www.w3.org/TR/device-memory-1/#sec-device-memory-client-hint-header)
+ * @see [Specification → Device Memory](http://webconcepts.info/specs/W3C/TR/device-memory-1)
  */
 export type HttpHeaderDeviceMemory = 'Device-Memory';
 
