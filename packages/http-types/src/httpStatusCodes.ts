@@ -739,7 +739,7 @@ export type HttpStatusCode505 = 505;
  * itself, and is therefore not a proper end point in the
  * negotiation process.
  *
- * @see [Documentation → RFC 7725 §3](https://datatracker.ietf.org/doc/html/rfc7725#section-3)
+ * @see [Documentation → RFC 2295 §8.1](https://datatracker.ietf.org/doc/html/rfc2295#section-8.1)
  * @see [Specification → RFC 2295](https://webconcepts.info/specs/IETF/RFC/2295)
  */
 export type HttpStatusCode506 = 506;
