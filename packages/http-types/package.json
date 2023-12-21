@@ -36,7 +36,7 @@
 		"src/*.d.ts"
 	],
 	"scripts": {
-		"generateHttpTypes": "ts-node ./build/generateHttpTypes.ts --resolveJsonModule",
+		"generateHttpTypes": "node -r @swc-node/register build/generateHttpTypes.ts",
 		"build": "npm run generateHttpTypes",
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
@@ -57,7 +57,7 @@
 		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
-		"ts-node": "^10.9.1",
+		"@swc-node/register": "^1.6.8",
 		"watch": "^1.0.2",
 		"word-wrap": "^1.2.4"
 	}
