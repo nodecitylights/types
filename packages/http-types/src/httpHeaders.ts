@@ -2021,8 +2021,8 @@ export type HttpHeaderSaveData = 'Save-Data';
  * resolvable. An HTTP client MUST use this header field when
  * issuing a SOAP HTTP Request.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383528)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/SOAP)
+ * @see [Documentation → Simple Object Access Protocol (SOAP) 1.1](http://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383528)
+ * @see [Specification → Simple Object Access Protocol (SOAP) 1.1](http://webconcepts.info/specs/W3C/TR/SOAP)
  */
 export type HttpHeaderSOAPAction = 'SOAPAction';
 
