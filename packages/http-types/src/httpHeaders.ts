@@ -1762,8 +1762,8 @@ export type HttpHeaderProxyAuthorization = 'Proxy-Authorization';
  * a server. It specifies the features supported by the
  * specified proxy.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-proxy)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-proxy)
+ * @see [Documentation → Notification for Proxy Caches](http://www.w3.org/TR/WD-proxy)
+ * @see [Specification → Notification for Proxy Caches](http://webconcepts.info/specs/W3C/TR/WD-proxy)
  */
 export type HttpHeaderProxyFeatures = 'Proxy-Features';
 
@@ -1773,8 +1773,8 @@ export type HttpHeaderProxyFeatures = 'Proxy-Features';
  * Proxy-Features header was present in the corresponding
  * request.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-proxy)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-proxy)
+ * @see [Documentation → Notification for Proxy Caches](http://www.w3.org/TR/WD-proxy)
+ * @see [Specification → Notification for Proxy Caches](http://webconcepts.info/specs/W3C/TR/WD-proxy)
  */
 export type HttpHeaderProxyInstruction = 'Proxy-Instruction';
 
