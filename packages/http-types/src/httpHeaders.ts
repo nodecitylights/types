@@ -1904,8 +1904,8 @@ export type HttpHeaderReferer = 'Referer';
  * information (sent via the Referer header) should be included
  * with requests made.
  *
- * @see [Documentation → undefined](https://www.w3.org/TR/referrer-policy/#referrer-policy-header-dfn)
- * @see [Specification → undefined](https://www.w3.org/TR/referrer-policy/)
+ * @see [Documentation → Referrer Policy](https://www.w3.org/TR/referrer-policy/#referrer-policy-header-dfn)
+ * @see [Specification → Referrer Policy](https://www.w3.org/TR/referrer-policy/)
  */
 export type HttpHeaderReferrerPolicy = 'Referrer-Policy';
 
