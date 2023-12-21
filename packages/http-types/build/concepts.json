@@ -1178,6 +1178,32 @@
 				]
 			},
 			{
+				"value":"Cache-Groups",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"http://webconcepts.info/concepts/http-header/Cache-Groups",
+				"details":[
+					{
+						"description":"The \"Cache-Groups\" response header provides a way of describing the relationships between a set of stored responses in HTTP caches by associating them with one or more opaque strings.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-2",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups",
+						"spec-name":"Internet Draft ietf-httpbis-cache-groups"
+					}
+				]
+			},
+			{
+				"value":"Cache-Group-Invalidation",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"http://webconcepts.info/concepts/http-header/Cache-Group-Invalidation",
+				"details":[
+					{
+						"description":"The \"Cache-Group-Invalidation\" response header that allows a state-changing response to trigger a group invalidation.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-3",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups",
+						"spec-name":"Internet Draft ietf-httpbis-cache-groups"
+					}
+				]
+			},
+			{
 				"value":"Cache-NT",
 				"concept":"https://webconcepts.info/concepts/http-header/",
 				"id":"https://webconcepts.info/concepts/http-header/Cache-NT",
