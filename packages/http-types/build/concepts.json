@@ -854,6 +854,19 @@
 				]
 			},
 			{
+				"value":"Accept-Signature",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Accept-Signature",
+				"details":[
+					{
+						"description":"The \"Accept-Signature\" field is a Dictionary structured field containing the metadata for one or more requested message signatures to be generated from message components of the target HTTP message. Each member describes a single message signature.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures",
+						"spec-name":"Internet Draft ietf-httpbis-message-signatures"
+					}
+				]
+			},
+			{
 				"value":"Access-Control-Allow-Credentials",
 				"concept":"https://webconcepts.info/concepts/http-header/",
 				"id":"https://webconcepts.info/concepts/http-header/Access-Control-Allow-Credentials",
@@ -954,19 +967,6 @@
 						"documentation":"https://fetch.spec.whatwg.org/#http-access-control-request-method",
 						"specification":"https://fetch.spec.whatwg.org/",
 						"spec-name":"WHATWG Fetch Standard"
-					}
-				]
-			},
-			{
-				"value":"Accept-Signature",
-				"concept":"https://webconcepts.info/concepts/http-header/",
-				"id":"https://webconcepts.info/concepts/http-header/Accept-Signature",
-				"details":[
-					{
-						"description":"The \"Accept-Signature\" field is a Dictionary structured field containing the metadata for one or more requested message signatures to be generated from message components of the target HTTP message. Each member describes a single message signature.",
-						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1",
-						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures",
-						"spec-name":"Internet Draft ietf-httpbis-message-signatures"
 					}
 				]
 			},

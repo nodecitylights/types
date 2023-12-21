@@ -213,6 +213,18 @@ export type HttpHeaderAcceptQuery = 'Accept-Query';
 export type HttpHeaderAcceptRanges = 'Accept-Ranges';
 
 /**
+ * The "Accept-Signature" field is a Dictionary structured
+ * field containing the metadata for one or more requested
+ * message signatures to be generated from message components
+ * of the target HTTP message. Each member describes a single
+ * message signature.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1)
+ * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
+ */
+export type HttpHeaderAcceptSignature = 'Accept-Signature';
+
+/**
  * The Access-Control-Allow-Credentials header indicates
  * whether the response to request can be exposed when the omit
  * credentials flag is unset. When part of the response to a
@@ -293,18 +305,6 @@ export type HttpHeaderAccessControlRequestHeaders = 'Access-Control-Request-Head
  * @see [Specification → WHATWG Fetch Standard](https://fetch.spec.whatwg.org/)
  */
 export type HttpHeaderAccessControlRequestMethod = 'Access-Control-Request-Method';
-
-/**
- * The "Accept-Signature" field is a Dictionary structured
- * field containing the metadata for one or more requested
- * message signatures to be generated from message components
- * of the target HTTP message. Each member describes a single
- * message signature.
- *
- * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1)
- * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
- */
-export type HttpHeaderAcceptSignature = 'Accept-Signature';
 
 /**
  * The "Age" header field conveys the sender's estimate of the
@@ -3022,6 +3022,7 @@ export type HttpHeader =
 	| HttpHeaderAcceptPushPolicy
 	| HttpHeaderAcceptQuery
 	| HttpHeaderAcceptRanges
+	| HttpHeaderAcceptSignature
 	| HttpHeaderAccessControlAllowCredentials
 	| HttpHeaderAccessControlAllowHeaders
 	| HttpHeaderAccessControlAllowMethods
@@ -3030,7 +3031,6 @@ export type HttpHeader =
 	| HttpHeaderAccessControlMaxAge
 	| HttpHeaderAccessControlRequestHeaders
 	| HttpHeaderAccessControlRequestMethod
-	| HttpHeaderAcceptSignature
 	| HttpHeaderAge
 	| HttpHeaderAllow
 	| HttpHeaderAltSvc
