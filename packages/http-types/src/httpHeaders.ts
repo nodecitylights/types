@@ -2714,7 +2714,7 @@ export type HttpHeaderUpgradeInsecureRequests = 'Upgrade-Insecure-Requests';
  * indicates whether the corresponding upload is considered
  * complete. The Upload-Complete field value is a Boolean.
  *
- * @see [Documentationundefined](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-complete)
+ * @see [Documentation → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-complete)
  * @see [Specification → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/)
  */
 export type HttpHeaderUploadComplete = 'Upload-Complete';
@@ -2725,7 +2725,7 @@ export type HttpHeaderUploadComplete = 'Upload-Complete';
  * counted in bytes. The Upload-Offset field value is an
  * Integer.
  *
- * @see [Documentationundefined](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-offset)
+ * @see [Documentation → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/#name-upload-offset)
  * @see [Specification → Internet Draft ietf-httpbis-resumable-upload](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload/)
  */
 export type HttpHeaderUploadOffset = 'Upload-Offset';
