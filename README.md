@@ -8,7 +8,7 @@ A monorepo of pure-TypeScript type packages.
 ## Packages
 
 - [`@neoncitylights/types`](/packages/types): small library of general-purpose utility types
-- [`@neoncitylights/typed-css-utils`](/packages/typed-css-utils): utilities for writing typed CSS in TypeScript
+- [`@neoncitylights/css-types`](packages/css-types): utilities for writing typed CSS in TypeScript
 - [`@neoncitylights/http-types`](packages/http-types): strongly typed HTTP headers, methods, and status codes (supports Fetch, XHR, Node.js HTTP)
 
 ## License

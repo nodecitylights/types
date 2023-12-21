@@ -1,24 +1,25 @@
 import fs from 'fs';
 import wordWrap from 'word-wrap';
 
+import type { Concept, ConceptValue } from './conceptTypes';
+import { makeDocBlock, makeDocSeeTag } from './docUtils';
+import { capitalize, getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader, makeCamelCase } from './stringUtils';
+import { makeExcludeType, makeStringType, makeType, makeUnionType } from './typeUtils';
 import {
-	capitalize,
-	Concept,
-	ConceptValue,
-	getDocumentationLabel,
-	getHttpMethodAsCamelCase,
-	isForbiddenHttpRequestHeader,
-	makeCamelCase,
-	makeDocBlock,
-	makeDocSeeTag,
-	makeExcludeType,
-	makeStringType,
-	makeType,
-	makeUnionType,
-	READ_FILE_PATH,
-} from '.';
+	IetfDataTrackerLabelProvider,
+	UrlLabelProvider,
+	W3OrgLabelProvider,
+	WicgLabelProvider,
+} from './UrlLabelProvider';
 
-function createRunGenerator(
+const READ_FILE_PATH = './build/concepts.json';
+const labelProvider = new UrlLabelProvider([
+	new W3OrgLabelProvider(),
+	new WicgLabelProvider(),
+	new IetfDataTrackerLabelProvider(),
+]);
+
+function generate(
 	writeFilePath: string,
 	conceptName: string,
 	endMessage: (concept: Concept) => string,
@@ -57,10 +58,12 @@ function makeFullDocBlock(conceptValue: ConceptValue): string {
 	const specLinks: string[] = [];
 
 	for(const detail of conceptValue.details) {
-		const docLabel = getDocumentationLabel(new URL(detail.documentation));
+		docLinks.push(makeDocSeeTag(
+			`Documentation → ${labelProvider.provideLabel(detail, true)}`,
+			new URL(detail.documentation)));
 
-		docLinks.push(makeDocSeeTag(`Documentation${docLabel}`, new URL(detail.documentation)));
-		specLinks.push(makeDocSeeTag(`Specification → ${detail['spec-name']}`,
+		specLinks.push(makeDocSeeTag(
+			`Specification → ${labelProvider.provideLabel(detail, false)}`,
 			new URL(detail.specification)));
 	}
 
@@ -75,7 +78,7 @@ function makeFullDocBlock(conceptValue: ConceptValue): string {
 }
 
 // Generate HTTP methods
-createRunGenerator(
+generate(
 	'./src/httpMethods.ts',
 	'http-method',
 	(concepts) => `Exported ${concepts.values.length} HTTP methods`,
@@ -100,7 +103,7 @@ createRunGenerator(
 );
 
 // Generate HTTP status codes
-createRunGenerator(
+generate(
 	'./src/httpStatusCodes.ts',
 	'http-status-code',
 	(concepts) => `Exported ${concepts.values.length} HTTP status codes`,
@@ -161,7 +164,7 @@ createRunGenerator(
 );
 
 // Generate HTTP headers
-createRunGenerator(
+generate(
 	'./src/httpHeaders.ts',
 	'http-header',
 	(concept) => `Exported ${concept.values.length} HTTP headers`,

@@ -6,9 +6,9 @@ export default defineConfig({
 	build: {
 		lib: {
 			entry: path.resolve(__dirname, 'src/index.ts'),
-			name: 'typed-css-utils',
+			name: 'css-types',
 			formats: ['es'],
-			fileName: (format) => `typed-css-utils.${format}.js`,
+			fileName: (format) => `css-types.${format}.js`,
 		},
 	},
 	define: { 
