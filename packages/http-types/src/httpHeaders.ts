@@ -407,6 +407,18 @@ export type HttpHeaderAuthenticationInfo = 'Authentication-Info';
 export type HttpHeaderAuthorization = 'Authorization';
 
 /**
+ * When a HTTP client makes a request for a resource for which
+ * it has an appropriate dictionary, it can add a
+ * "Available-Dictionary" request header to the request to
+ * indicate to the server that it has a dictionary available to
+ * use for compression.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2)
+ * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
+ */
+export type HttpHeaderAvailableDictionary = 'Available-Dictionary';
+
+/**
  * The C-Ext response header field is used to indicate that all
  * hop-by-hop mandatory extension declarations in the request
  * were fulfilled.
@@ -626,6 +638,14 @@ export type HttpHeaderConnection = 'Connection';
  * @see [Specification → RFC 2068](https://webconcepts.info/specs/IETF/RFC/2068)
  */
 export type HttpHeaderContentBase = 'Content-Base';
+
+/**
+ *
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4)
+ * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
+ */
+export type HttpHeaderContentDictionary = 'Content-Dictionary';
 
 /**
  * The Content-Digest HTTP field can be used in requests and
@@ -995,6 +1015,18 @@ export type HttpHeaderDestination = 'Destination';
  * @see [Specification → Device Memory](https://webconcepts.info/specs/W3C/TR/device-memory-1)
  */
 export type HttpHeaderDeviceMemory = 'Device-Memory';
+
+/**
+ * When a HTTP client makes a request for a resource for which
+ * it has an appropriate dictionary and the dictionary was
+ * stored with a server-provided "id" in the Use-As-Dictionary
+ * response then the client MUST echo the stored "id" in a
+ * "Dictionary-ID" request header.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3)
+ * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
+ */
+export type HttpHeaderDictionaryID = 'Dictionary-ID';
 
 /**
  * The Digest message header field provides a message digest of
@@ -2764,6 +2796,17 @@ export type HttpHeaderUploadOffset = 'Upload-Offset';
 export type HttpHeaderUrgency = 'Urgency';
 
 /**
+ * When responding to a HTTP Request, a server can advertise
+ * that the response can be used as a dictionary for future
+ * requests for URLs that match the rules specified in the
+ * "Use-As-Dictionary" response header.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1)
+ * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
+ */
+export type HttpHeaderUseAsDictionary = 'Use-As-Dictionary';
+
+/**
  * The "User-Agent" header field contains information about the
  * user agent originating the request, which is often used by
  * servers to help identify the scope of reported
@@ -2974,6 +3017,7 @@ export type HttpHeader =
 	| HttpHeaderAuthenticationControl
 	| HttpHeaderAuthenticationInfo
 	| HttpHeaderAuthorization
+	| HttpHeaderAvailableDictionary
 	| HttpHeaderCExt
 	| HttpHeaderCMan
 	| HttpHeaderCOpt
@@ -2992,6 +3036,7 @@ export type HttpHeader =
 	| HttpHeaderClose
 	| HttpHeaderConnection
 	| HttpHeaderContentBase
+	| HttpHeaderContentDictionary
 	| HttpHeaderContentDigest
 	| HttpHeaderContentDisposition
 	| HttpHeaderContentEncoding
@@ -3023,6 +3068,7 @@ export type HttpHeader =
 	| HttpHeaderDepth
 	| HttpHeaderDestination
 	| HttpHeaderDeviceMemory
+	| HttpHeaderDictionaryID
 	| HttpHeaderDigest
 	| HttpHeaderDownlink
 	| HttpHeaderEDIINTFeatures
@@ -3178,6 +3224,7 @@ export type HttpHeader =
 	| HttpHeaderUploadComplete
 	| HttpHeaderUploadOffset
 	| HttpHeaderUrgency
+	| HttpHeaderUseAsDictionary
 	| HttpHeaderUserAgent
 	| HttpHeaderVariantKey
 	| HttpHeaderVariantVary
