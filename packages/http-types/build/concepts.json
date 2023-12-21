@@ -958,6 +958,19 @@
 				]
 			},
 			{
+				"value":"Accept-Signature",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Accept-Signature",
+				"details":[
+					{
+						"description":"The \"Accept-Signature\" field is a Dictionary structured field containing the metadata for one or more requested message signatures to be generated from message components of the target HTTP message. Each member describes a single message signature.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures",
+						"spec-name":"Internet Draft ietf-httpbis-message-signatures"
+					}
+				]
+			},
+			{
 				"value":"Age",
 				"concept":"https://webconcepts.info/concepts/http-header/",
 				"id":"https://webconcepts.info/concepts/http-header/Age",
@@ -3462,10 +3475,23 @@
 				"id":"https://webconcepts.info/concepts/http-header/Signature",
 				"details":[
 					{
-						"description":"The \"signature\" HTTP Header is based on the model that the sender must authenticate itself with a digital signature produced by either a private asymmetric key (e.g., RSA) or a shared symmetric key (e.g., HMAC). The scheme is parameterized enough such that it is not bound to any particular key type or signing algorithm. However, it does explicitly assume that senders can send an HTTP 'Date' header.",
-						"documentation":"https://datatracker.ietf.org/doc/html/draft-cavage-http-signatures#section-4",
-						"specification":"https://webconcepts.info/specs/IETF/I-D/cavage-http-signatures",
-						"spec-name":"Internet Draft cavage-http-signatures"
+						"description":"The \"Signature\" field is a Dictionary structured field containing one or more message signatures generated from the signature context of the target message. The member's key is the label that uniquely identifies the message signature within the HTTP message. The member's value is a Byte Sequence containing the signature value for the message signature identified by the label.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.2",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures",
+						"spec-name":"Internet Draft ietf-httpbis-message-signatures"
+					}
+				]
+			},
+			{
+				"value":"Signature-Input",
+				"concept":"https://webconcepts.info/concepts/http-header/",
+				"id":"https://webconcepts.info/concepts/http-header/Signature-Input",
+				"details":[
+					{
+						"description":"The \"Signature-Input\" field is a Dictionary structured field containing the metadata for one or more message signatures generated from components within the HTTP message. Each member describes a single message signature.",
+						"documentation":"https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.1",
+						"specification":"https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures",
+						"spec-name":"Internet Draft ietf-httpbis-message-signatures"
 					}
 				]
 			},

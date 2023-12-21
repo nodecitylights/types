@@ -295,6 +295,18 @@ export type HttpHeaderAccessControlRequestHeaders = 'Access-Control-Request-Head
 export type HttpHeaderAccessControlRequestMethod = 'Access-Control-Request-Method';
 
 /**
+ * The "Accept-Signature" field is a Dictionary structured
+ * field containing the metadata for one or more requested
+ * message signatures to be generated from message components
+ * of the target HTTP message. Each member describes a single
+ * message signature.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1)
+ * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
+ */
+export type HttpHeaderAcceptSignature = 'Accept-Signature';
+
+/**
  * The "Age" header field conveys the sender's estimate of the
  * amount of time since the response was generated or
  * successfully validated at the origin server.
@@ -2478,19 +2490,29 @@ export type HttpHeaderSetCookie = 'Set-Cookie';
 export type HttpHeaderSetCookie2 = 'Set-Cookie2';
 
 /**
- * The "signature" HTTP Header is based on the model that the
- * sender must authenticate itself with a digital signature
- * produced by either a private asymmetric key (e.g., RSA) or a
- * shared symmetric key (e.g., HMAC). The scheme is
- * parameterized enough such that it is not bound to any
- * particular key type or signing algorithm. However, it does
- * explicitly assume that senders can send an HTTP 'Date'
- * header.
+ * The "Signature" field is a Dictionary structured field
+ * containing one or more message signatures generated from the
+ * signature context of the target message. The member's key is
+ * the label that uniquely identifies the message signature
+ * within the HTTP message. The member's value is a Byte
+ * Sequence containing the signature value for the message
+ * signature identified by the label.
  *
- * @see [Documentation → Internet Draft cavage-http-signatures §4](https://datatracker.ietf.org/doc/html/draft-cavage-http-signatures#section-4)
- * @see [Specification → Internet Draft cavage-http-signatures](https://webconcepts.info/specs/IETF/I-D/cavage-http-signatures)
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.2)
+ * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
  */
 export type HttpHeaderSignature = 'Signature';
+
+/**
+ * The "Signature-Input" field is a Dictionary structured field
+ * containing the metadata for one or more message signatures
+ * generated from components within the HTTP message. Each
+ * member describes a single message signature.
+ *
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.1)
+ * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
+ */
+export type HttpHeaderSignatureInput = 'Signature-Input';
 
 /**
  * Slug is an HTTP entity-header whose presence in a POST to a
@@ -3008,6 +3030,7 @@ export type HttpHeader =
 	| HttpHeaderAccessControlMaxAge
 	| HttpHeaderAccessControlRequestHeaders
 	| HttpHeaderAccessControlRequestMethod
+	| HttpHeaderAcceptSignature
 	| HttpHeaderAge
 	| HttpHeaderAllow
 	| HttpHeaderAltSvc
@@ -3198,6 +3221,7 @@ export type HttpHeader =
 	| HttpHeaderSetCookie
 	| HttpHeaderSetCookie2
 	| HttpHeaderSignature
+	| HttpHeaderSignatureInput
 	| HttpHeaderSlug
 	| HttpHeaderSourceMap
 	| HttpHeaderStatusURI
