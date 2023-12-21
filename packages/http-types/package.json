@@ -36,7 +36,7 @@
 		"src/*.d.ts"
 	],
 	"scripts": {
-		"generateHttpTypes": "ts-node ./build/generateHttpTypes.ts",
+		"generateHttpTypes": "ts-node ./build/generateHttpTypes.ts --resolveJsonModule",
 		"build": "npm run generateHttpTypes",
 		"build:typedoc": "npx typedoc",
 		"build:typedoc-watch": "npm run build:typedoc -- --watch",
