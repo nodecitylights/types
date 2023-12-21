@@ -39,7 +39,12 @@ export class W3OrgLabelProvider implements UrlLabelProviderForHost {
 
 		// http://www.w3.org/TR/server-timing/ -> server-timing
 		const lastIndex = path.endsWith('/') ? path.length - 1 : path.length;
-		const technicalReport = path.substring('/TR/'.length, lastIndex);
+		let technicalReport = path.substring('/TR/'.length, lastIndex);
+		const lastIndexDot = technicalReport.lastIndexOf('.');
+
+		if ( lastIndexDot !== -1 ) {
+			technicalReport = technicalReport.substring(0, lastIndexDot);
+		}
 
 		const w3Json = w3 as { [key: string]: string };
 		const technicalReportName = w3Json[technicalReport];

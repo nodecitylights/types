@@ -460,8 +460,8 @@ export type HttpHeaderCOpt = 'C-Opt';
  * field is a hop-by-hop header field and must not be
  * communicated by proxies over further connections.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743948)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Documentation → PEP - an Extension Mechanism for HTTP](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743948)
+ * @see [Specification → PEP - an Extension Mechanism for HTTP](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderCPEP = 'C-PEP';
 
@@ -471,8 +471,8 @@ export type HttpHeaderCPEP = 'C-PEP';
  * hop-by-hop header field and MUST NOT be communicated by
  * proxies over further connections.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743954)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Documentation → PEP - an Extension Mechanism for HTTP](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743954)
+ * @see [Specification → PEP - an Extension Mechanism for HTTP](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderCPEPInfo = 'C-PEP-Info';
 
@@ -1594,8 +1594,8 @@ export type HttpHeaderP3P = 'P3P';
  * ultimate recipient of the declaration. The PEP header field
  * is an end-to-end header field.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743947)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Documentation → PEP - an Extension Mechanism for HTTP](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743947)
+ * @see [Specification → PEP - an Extension Mechanism for HTTP](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderPEP = 'PEP';
 
@@ -1603,8 +1603,8 @@ export type HttpHeaderPEP = 'PEP';
  * PEP end-to-end policies MUST be transmitted to the ultimate
  * recipient of a message.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743953)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
+ * @see [Documentation → PEP - an Extension Mechanism for HTTP](http://www.w3.org/TR/WD-http-pep-971121.html#_Toc404743953)
+ * @see [Specification → PEP - an Extension Mechanism for HTTP](http://webconcepts.info/specs/W3C/TR/WD-http-pep)
  */
 export type HttpHeaderPEPInfo = 'PEP-Info';
 
