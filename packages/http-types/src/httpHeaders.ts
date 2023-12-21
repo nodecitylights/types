@@ -1959,8 +1959,8 @@ export type HttpHeaderRepeatabilityResult = 'Repeatability-Result';
  * The Report-To HTTP response header field instructs the user
  * agent to store reporting endpoints for an origin.
  *
- * @see [Documentation → undefined](http://www.w3.org/TR/reporting-1/#header)
- * @see [Specification → undefined](http://webconcepts.info/specs/W3C/TR/reporting-1)
+ * @see [Documentation → Reporting API](http://www.w3.org/TR/reporting-1/#header)
+ * @see [Specification → Reporting API](http://webconcepts.info/specs/W3C/TR/reporting-1)
  */
 export type HttpHeaderReportTo = 'Report-To';
 
