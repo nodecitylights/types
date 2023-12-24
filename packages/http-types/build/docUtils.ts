@@ -1,3 +1,4 @@
+import { makeDocBlock, makeDocSeeTag } from '@neoncitylights/codegen';
 import wordWrap from 'word-wrap';
 
 import type { ConceptValue } from './conceptTypes';
@@ -7,23 +8,6 @@ import {
 	W3OrgLabelProvider,
 	WicgLabelProvider,
 } from './UrlLabelProvider';
-
-export function makeDocTag(annotation: string, value: string): string {
-	return `@${annotation} ${value}`;
-}
-
-export function makeDocSeeTag(label: string, link: URL): string {
-	return makeDocTag('see', `[${label}](${link})`);
-}
-
-export function makeDocBlock(values: string[]): string {
-	let docBlock = '/**\n';
-	for(const value of values) {
-		docBlock += ` *${value === '' ? '\n' : ` ${value}\n`}`;
-	}
-	docBlock += ' */';
-	return docBlock;
-}
 
 const labelProvider = new UrlLabelProvider([
 	new W3OrgLabelProvider(),

@@ -1,11 +1,4 @@
-export function makeCamelCase(str: string): string {
-	const words = str.split('-');
-	return words[0] + words.slice(1).map((word) => capitalize(word)).join('');
-}
-
-export function capitalize(str: string): string {
-	return str[0].toUpperCase() + str.slice(1);
-}
+import { makeCamelCase } from '@neoncitylights/codegen';
 
 export function getHttpMethodAsCamelCase(method: string): string {
 	switch(method) {
@@ -18,7 +11,7 @@ export function getHttpMethodAsCamelCase(method: string): string {
 	case 'PROPFIND': return 'PropFind';
 	case 'PROPPATCH': return 'PropPatch';
 	case 'UPDATEREDIRECTREF': return 'UpdateRedirectRef';
-	default: return capitalize(makeCamelCase(method.toLowerCase()));
+	default: return makeCamelCase(method.toLowerCase());
 	}
 }
 

@@ -56,6 +56,9 @@
 		"version": "npm run lint && git add -A src",
 		"postversion": "git push && git push --tags"
 	},
+	"dependencies": {
+		"@neoncitylights/codegen": "file:../codegen"
+	},
 	"devDependencies": {
 		"@swc-node/register": "^1.6.8",
 		"watch": "^1.0.2",
