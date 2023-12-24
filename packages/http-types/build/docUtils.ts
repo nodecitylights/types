@@ -5,7 +5,7 @@ import {
 	IetfDataTrackerLabelProvider,
 	UrlLabelProvider,
 	W3OrgLabelProvider,
-	WicgLabelProvider
+	WicgLabelProvider,
 } from './UrlLabelProvider';
 
 export function makeDocTag(annotation: string, value: string): string {
