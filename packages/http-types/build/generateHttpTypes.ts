@@ -1,23 +1,11 @@
 import fs from 'fs';
-import wordWrap from 'word-wrap';
 
-import type { Concept, ConceptValue } from './conceptTypes';
-import { makeDocBlock, makeDocSeeTag } from './docUtils';
+import type { Concept } from './conceptTypes';
+import { makeDocBlock, makeFullDocBlock } from './docUtils';
 import { capitalize, getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader, makeCamelCase } from './stringUtils';
 import { makeExcludeType, makeStringType, makeType, makeUnionType } from './typeUtils';
-import {
-	IetfDataTrackerLabelProvider,
-	UrlLabelProvider,
-	W3OrgLabelProvider,
-	WicgLabelProvider,
-} from './UrlLabelProvider';
 
 const READ_FILE_PATH = './build/concepts.json';
-const labelProvider = new UrlLabelProvider([
-	new W3OrgLabelProvider(),
-	new WicgLabelProvider(),
-	new IetfDataTrackerLabelProvider(),
-]);
 
 function generate(
 	writeFilePath: string,
@@ -48,33 +36,6 @@ function generate(
 		console.timeEnd(conceptName);
 		console.log(`${writeFilePath}: ${endMessage(specificConcept)}\n`);
 	});
-}
-
-function makeFullDocBlock(conceptValue: ConceptValue): string {
-	const description = wordWrap(conceptValue.details[0].description, { width: 60, indent: '' });
-	const lines = description.split('\n');
-
-	const docLinks: string[] = [];
-	const specLinks: string[] = [];
-
-	for(const detail of conceptValue.details) {
-		docLinks.push(makeDocSeeTag(
-			`Documentation → ${labelProvider.provideLabel(detail, true)}`,
-			new URL(detail.documentation)));
-
-		specLinks.push(makeDocSeeTag(
-			`Specification → ${labelProvider.provideLabel(detail, false)}`,
-			new URL(detail.specification)));
-	}
-
-	const docBlock = makeDocBlock([
-		...lines.map((line) => line.trim()),
-		'',
-		...docLinks,
-		...specLinks,
-	]);
-
-	return docBlock;
 }
 
 // Generate HTTP methods
