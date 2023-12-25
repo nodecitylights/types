@@ -14,7 +14,7 @@ function generate(
 	endMessage: (concept: Concept) => string,
 	generateFn: (concept: Concept, writeStream: fs.WriteStream) => void,
 ) {
-	console.time(conceptName);
+	console.time(writeFilePath);
 	fs.readFile(READ_FILE_PATH, 'utf8', (err, data) => {
 		if(err) {
 			console.error(err);
@@ -23,7 +23,7 @@ function generate(
 
 		// setup file and timer
 		fs.truncateSync(writeFilePath, 0);
-		console.log(`${writeFilePath} emptied`);
+		console.log(`${writeFilePath}: emptied`);
 
 		const writeStream: fs.WriteStream = fs.createWriteStream(writeFilePath, {flags:'a'});
 		writeStream.write(makeDocBlock([
@@ -39,7 +39,7 @@ function generate(
 
 		// cleanup
 		writeStream.end();
-		console.timeEnd(conceptName);
+		console.timeEnd(writeFilePath);
 		console.log(`${writeFilePath}: ${endMessage(specificConcept)}\n`);
 	});
 }
