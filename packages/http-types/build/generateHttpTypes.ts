@@ -72,11 +72,11 @@ generate(
 		const httpStatusCodeTypes: string[] = [];
 
 		// categories
-		const infoStatusCodes: string[] = [];
-		const successStatusCodes: string[] = [];
-		const redirectStatusCodes: string[] = [];
-		const clientErrorStatusCodes: string[] = [];
-		const serverErrorStatusCodes: string[] = [];
+		const statusCodes100: string[] = [];
+		const statusCodes200: string[] = [];
+		const statusCodes300: string[] = [];
+		const statusCodes400: string[] = [];
+		const statusCodes500: string[] = [];
 
 		// generate each individual HTTP status code type
 		for(const conceptValue of concept.values) {
@@ -89,29 +89,22 @@ generate(
 			const docBlock = makeFullDocBlock(conceptValue);
 			writeStream.write(`${docBlock}\n${tsType}\n\n`);
 
-			if(httpStatusCodeName.startsWith('1')) {
-				infoStatusCodes.push(httpStatusCodeType);
-			}
-			else if(httpStatusCodeName.startsWith('2')) {
-				successStatusCodes.push(httpStatusCodeType);
-			}
-			else if(httpStatusCodeName.startsWith('3')) {
-				redirectStatusCodes.push(httpStatusCodeType);
-			}
-			else if(httpStatusCodeName.startsWith('4')) {
-				clientErrorStatusCodes.push(httpStatusCodeType);
-			}
-			else if(httpStatusCodeName.startsWith('5')) {
-				serverErrorStatusCodes.push(httpStatusCodeType);
+			const statusCodeFirstDigit = httpStatusCodeName[0];
+			switch(statusCodeFirstDigit) {
+			case '1': statusCodes100.push(httpStatusCodeType); break;
+			case '2': statusCodes200.push(httpStatusCodeType); break;
+			case '3': statusCodes300.push(httpStatusCodeType); break;
+			case '4': statusCodes400.push(httpStatusCodeType); break;
+			case '5': statusCodes500.push(httpStatusCodeType); break;
 			}
 		}
 
 		// generate union type of all HTTP status codes
-		writeStream.write(makeUnionType('HttpInfoStatusCode', infoStatusCodes) + '\n\n');
-		writeStream.write(makeUnionType('HttpSuccessStatusCode', successStatusCodes) + '\n\n');
-		writeStream.write(makeUnionType('HttpRedirectStatusCode', redirectStatusCodes) + '\n\n');
-		writeStream.write(makeUnionType('HttpClientErrorStatusCode', clientErrorStatusCodes) + '\n\n');
-		writeStream.write(makeUnionType('HttpServerErrorStatusCode', serverErrorStatusCodes) + '\n\n');
+		writeStream.write(makeUnionType('HttpInfoStatusCode', statusCodes100) + '\n\n');
+		writeStream.write(makeUnionType('HttpSuccessStatusCode', statusCodes200) + '\n\n');
+		writeStream.write(makeUnionType('HttpRedirectStatusCode', statusCodes300) + '\n\n');
+		writeStream.write(makeUnionType('HttpClientErrorStatusCode', statusCodes400) + '\n\n');
+		writeStream.write(makeUnionType('HttpServerErrorStatusCode', statusCodes500) + '\n\n');
 		writeStream.write(makeUnionType('HttpStatusCode', [
 			'HttpInfoStatusCode',
 			'HttpSuccessStatusCode',
