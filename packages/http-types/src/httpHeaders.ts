@@ -219,7 +219,7 @@ export type HttpHeaderAcceptRanges = 'Accept-Ranges';
  * of the target HTTP message. Each member describes a single
  * message signature.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1)
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures §5.1](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-5.1)
  * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
  */
 export type HttpHeaderAcceptSignature = 'Accept-Signature';
@@ -425,7 +425,7 @@ export type HttpHeaderAuthorization = 'Authorization';
  * indicate to the server that it has a dictionary available to
  * use for compression.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2)
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.2](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.2)
  * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
  */
 export type HttpHeaderAvailableDictionary = 'Available-Dictionary';
@@ -532,7 +532,7 @@ export type HttpHeaderCacheControl = 'Cache-Control';
  * responses in HTTP caches by associating them with one or
  * more opaque strings.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-cache-groups](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-2)
+ * @see [Documentation → Internet Draft ietf-httpbis-cache-groups §2](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-2)
  * @see [Specification → Internet Draft ietf-httpbis-cache-groups](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups)
  */
 export type HttpHeaderCacheGroups = 'Cache-Groups';
@@ -541,7 +541,7 @@ export type HttpHeaderCacheGroups = 'Cache-Groups';
  * The "Cache-Group-Invalidation" response header that allows a
  * state-changing response to trigger a group invalidation.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-cache-groups](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-3)
+ * @see [Documentation → Internet Draft ietf-httpbis-cache-groups §3](https://httpwg.org/http-extensions/draft-ietf-httpbis-cache-groups.html#section-3)
  * @see [Specification → Internet Draft ietf-httpbis-cache-groups](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-cache-groups)
  */
 export type HttpHeaderCacheGroupInvalidation = 'Cache-Group-Invalidation';
@@ -654,7 +654,7 @@ export type HttpHeaderContentBase = 'Content-Base';
 /**
  *
  *
- * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4)
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.4](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.4)
  * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
  */
 export type HttpHeaderContentDictionary = 'Content-Dictionary';
@@ -1035,7 +1035,7 @@ export type HttpHeaderDeviceMemory = 'Device-Memory';
  * response then the client MUST echo the stored "id" in a
  * "Dictionary-ID" request header.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3)
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.3](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.3)
  * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
  */
 export type HttpHeaderDictionaryID = 'Dictionary-ID';
@@ -2498,7 +2498,7 @@ export type HttpHeaderSetCookie2 = 'Set-Cookie2';
  * Sequence containing the signature value for the message
  * signature identified by the label.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.2)
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures §4.2](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.2)
  * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
  */
 export type HttpHeaderSignature = 'Signature';
@@ -2509,7 +2509,7 @@ export type HttpHeaderSignature = 'Signature';
  * generated from components within the HTTP message. Each
  * member describes a single message signature.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-message-signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.1)
+ * @see [Documentation → Internet Draft ietf-httpbis-message-signatures §4.1](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html#section-4.1)
  * @see [Specification → Internet Draft ietf-httpbis-message-signatures](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-message-signatures)
  */
 export type HttpHeaderSignatureInput = 'Signature-Input';
@@ -2823,7 +2823,7 @@ export type HttpHeaderUrgency = 'Urgency';
  * requests for URLs that match the rules specified in the
  * "Use-As-Dictionary" response header.
  *
- * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1)
+ * @see [Documentation → Internet Draft ietf-httpbis-compression-dictionary §2.1](https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html#section-2.1)
  * @see [Specification → Internet Draft ietf-httpbis-compression-dictionary](https://webconcepts.info/specs/IETF/I-D/ietf-httpbis-compression-dictionary)
  */
 export type HttpHeaderUseAsDictionary = 'Use-As-Dictionary';
