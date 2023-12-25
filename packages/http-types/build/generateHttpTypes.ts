@@ -58,7 +58,7 @@ generate(
 			httpMethodTypes.push(httpMethodType);
 
 			const httpMethodName = conceptValue.value;
-			const tsType = makeStringType( httpMethodType, httpMethodName);
+			const tsType = makeStringType(httpMethodType, httpMethodName);
 
 			const docBlock = makeFullDocBlock(conceptValue);
 			writeStream.write(`${docBlock}\n${tsType}\n\n`);
@@ -89,7 +89,7 @@ generate(
 			httpStatusCodeTypes.push(httpStatusCodeType);
 
 			const httpStatusCodeName = conceptValue.value;
-			const tsType = makeType( httpStatusCodeType, httpStatusCodeName, false);
+			const tsType = makeType(httpStatusCodeType, httpStatusCodeName, false);
 
 			const docBlock = makeFullDocBlock(conceptValue);
 			writeStream.write(`${docBlock}\n${tsType}\n\n`);
