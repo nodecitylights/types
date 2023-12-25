@@ -1,4 +1,4 @@
-import { asCamelCase, capitalize } from './stringUtils';
+import { asCamelCase } from './stringUtils';
 
 export function getHttpMethodAsCamelCase(method: string): string {
 	switch(method) {
@@ -11,7 +11,7 @@ export function getHttpMethodAsCamelCase(method: string): string {
 	case 'PROPFIND': return 'PropFind';
 	case 'PROPPATCH': return 'PropPatch';
 	case 'UPDATEREDIRECTREF': return 'UpdateRedirectRef';
-	default: return capitalize(asCamelCase(method.toLowerCase()));
+	default: return asCamelCase(method.toLowerCase());
 	}
 }
 
