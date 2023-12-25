@@ -67,7 +67,7 @@ export class WicgLabelProvider implements UrlLabelProviderForHost {
 
 export class IetfDataTrackerLabelProvider implements UrlLabelProviderForHost {
 	matchesHostName(hostName: string): boolean {
-		return hostName === 'datatracker.ietf.org';
+		return hostName === 'datatracker.ietf.org' || hostName === 'httpwg.org';
 	}
 
 	provideLabel(detail: ConceptValueDetail, includeFragment: boolean): string {
@@ -76,18 +76,14 @@ export class IetfDataTrackerLabelProvider implements UrlLabelProviderForHost {
 		}
 
 		const link = new URL(detail.documentation);
-		const path = link.pathname;
-		const hash = link.hash;
-
 		let label = detail['spec-name'];
 
 		// eslint-disable-next-line security/detect-unsafe-regex
-		const regex = /(draft-(\w|-)+|rfc(\d{4,}))#section-(\d+)((.\d*)*)/;
-		const ietfPath = path.substring('/doc/html/'.length) + hash;
-		const matches = regex.exec(ietfPath);
+		const regex = /#section-(\d+)((.\d*)*)/;
+		const matches = regex.exec(link.hash);
 
 		if( matches !== null ) {
-			label += ` §${matches[4] + matches[5]}`; // section
+			label += ` §${matches[1] + matches[2]}`;
 		}
 
 		return label;
