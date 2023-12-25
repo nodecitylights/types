@@ -2,8 +2,9 @@ import fs from 'fs';
 
 import type { Concept } from './conceptTypes';
 import { makeDocBlock, makeFullDocBlock } from './docUtils';
-import { capitalize, getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader, makeCamelCase } from './stringUtils';
+import { capitalize, makeCamelCase } from './stringUtils';
 import { makeExcludeType, makeStringType, makeType, makeUnionType } from './typeUtils';
+import { getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader } from './httpUtils';
 
 const READ_FILE_PATH = './build/concepts.json';
 
