@@ -1,0 +1,25 @@
+{
+	"private": true,
+	"name": "@neoncitylights/codegen",
+	"description": "An internal library for convenient TypeScript code generation",
+	"license": "MIT",
+	"author": {
+		"name": "Samantha",
+		"url": "https://github.com/neoncitylights"
+	},
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"module": "./dist/codegen.mjs",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/codegen.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "vite build"
+	}
+}

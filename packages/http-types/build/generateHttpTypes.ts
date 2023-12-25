@@ -1,9 +1,17 @@
+import {
+	capitalize,
+	makeCamelCase,
+	makeDocBlock,
+	makeExcludeType,
+	makeStringType,
+	makeType,
+	makeUnionType,
+} from '@neoncitylights/codegen';
 import fs from 'fs';
 
 import type { Concept } from './conceptTypes';
-import { makeDocBlock, makeFullDocBlock } from './docUtils';
-import { capitalize, getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader, makeCamelCase } from './stringUtils';
-import { makeExcludeType, makeStringType, makeType, makeUnionType } from './typeUtils';
+import { makeFullDocBlock } from './docUtils';
+import { getHttpMethodAsCamelCase, isForbiddenHttpRequestHeader } from './stringUtils';
 
 const READ_FILE_PATH = './build/concepts.json';
 
@@ -80,7 +88,7 @@ generate(
 
 		// generate each individual HTTP status code type
 		for(const conceptValue of concept.values) {
-			const httpStatusCodeType = `HttpStatusCode${capitalize(makeCamelCase(conceptValue.value))}`;
+			const httpStatusCodeType = `HttpStatusCode${makeCamelCase(conceptValue.value)}`;
 			httpStatusCodeTypes.push(httpStatusCodeType);
 
 			const httpStatusCodeName = conceptValue.value;
@@ -128,7 +136,7 @@ generate(
 
 		// generate each individual HTTP header type
 		for(const conceptValue of concept.values) {
-			const httpHeaderType = `HttpHeader${capitalize(makeCamelCase(conceptValue.value))}`;
+			const httpHeaderType = `HttpHeader${makeCamelCase(conceptValue.value)}`;
 			httpHeaderTypes.push(httpHeaderType);
 
 			const httpHeaderName = capitalize(conceptValue.value);

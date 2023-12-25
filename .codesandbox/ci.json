@@ -2,6 +2,7 @@
 	"buildCommand": false,
 	"node": "18",
 	"packages": [
+		"packages/codegen",
 		"packages/types",
 		"packages/css-types",
 		"packages/http-types"

@@ -12,7 +12,7 @@
 		"lint:md": "markdownlint-cli2 '**/*.md' \"#node_modules\"",
 		"lint:md-fix": "npm run lint:md -- --fix",
 		"lint:md-env": "markdownlint-cli2 --version",
-		"lint:pub": "publint packages/types && publint packages/css-types",
+		"lint:pub": "publint packages/codegen && publint packages/types && publint packages/css-types && publint packages/http-types",
 		"lint:pub-env": "publint --version"
 	},
 	"devDependencies": {
