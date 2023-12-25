@@ -1,4 +1,4 @@
-import { capitalize, asCamelCase } from './stringUtils';
+import { asCamelCase, capitalize } from './stringUtils';
 
 export function getHttpMethodAsCamelCase(method: string): string {
 	switch(method) {
