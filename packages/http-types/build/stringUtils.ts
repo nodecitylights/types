@@ -1,6 +1,5 @@
-export function makeCamelCase(str: string): string {
-	const words = str.split('-');
-	return words[0] + words.slice(1).map((word) => capitalize(word)).join('');
+export function asCamelCase(str: string): string {
+	return str.split('-').map((word) => capitalize(word)).join('');
 }
 
 export function capitalize(str: string): string {
